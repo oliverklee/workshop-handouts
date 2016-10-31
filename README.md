@@ -1,2 +1,5 @@
-# workshop-handouts
-Dies sind die Handouts zu vielen meiner Workshops.
+# Workshop-Handouts
+
+Dies sind die Handouts zu vielen meiner Workshops:
+
+* [Train the Trainer](train-the-trainer)
