@@ -1,0 +1,84 @@
+\documentclass[a4paper,openany,twoside,titlepage,10pt]{scrbook}
+\usepackage[utf8]{inputenc}
+
+\usepackage{a4wide,ae,url}
+\usepackage[american,ngerman]{babel}
+\usepackage[babel]{csquotes}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{1}
+
+\bibliographystyle{alpha}
+
+\author{Oliver Klee | \url{http://www.oliverklee.de/} | \texttt{@oliklee}}
+\title{Train-the-Trainer}
+\date{Version vom \today}
+\pagestyle{headings}
+
+\newcommand{\fett}[1]{\textsf{\textbf{#1}}}
+
+\input{../shared/util/hyphenation}
+
+\begin{document}
+\raggedbottom
+\frontmatter
+
+\maketitle
+
+\tableofcontents
+
+\mainmatter
+
+\chapter{Seminar-Handwerkszeug}
+\input{../shared/parts/feedback}
+\input{../shared/parts/blitzlicht}
+\input{../shared/parts/visualisierung}
+\input{../shared/parts/lacrap}
+\input{../shared/parts/medien}
+
+\input{../shared/parts/methoden}
+
+\input{../shared/parts/grafische-darstellungsformen}
+
+\chapter{Rhetorik-Handwerkszeug}
+\input{../shared/parts/rhetorik-begriff}
+\input{../shared/parts/rhetorik-grundinstrumentarium}
+\input{../shared/parts/zungenbrecher}
+
+\chapter{Kommunikation}
+\input{../shared/parts/4-ohren-modell}
+\input{../shared/parts/aktives-zuhoeren}
+\input{../shared/parts/kontrollierter-dialog}
+\input{../shared/parts/fragetypen}
+\input{../shared/parts/fragen-beantworten}
+
+\chapter{Lernen}
+\input{lernkanaele}
+
+\input{lerneffekt}
+\input{lernbiologie}
+\input{lerngebote}
+\input{erklaeren}
+
+\input{motivation}
+
+\input{zeitplanung}
+
+
+\chapter{Literaturtipps}
+
+\section{Literatur speziell zu Workshops und Unterricht}
+\cite{moderationstechniken, visualisieren-praesentieren-moderieren, workshop-buch, treibhaeuser-der-zukunft}
+
+\section{Allgemeine Literatur zur Lehre in Mathematik, IT, Informatik}
+\cite{teaching-engineering, red-pen, it-trainer}
+
+\section{Literatur rund ums Lernen}
+\cite{denken-lernen-vergessen, lernen-zu-lernen}
+
+
+\bibliography{../shared/bibliography/literatur}
+
+\backmatter
+
+\end{document}
