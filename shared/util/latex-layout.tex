@@ -1,0 +1,104 @@
+%----------------------------------------------------------------------------------
+% Pakete und Parameter
+%----------------------------------------------------------------------------------
+
+% Input-Encoding für UTF-8
+\usepackage[utf8]{inputenc}
+
+% Mehr von der Seitenbreite nutzen
+\usepackage{a4wide}
+
+% Grafikpaket
+\usepackage{color}
+\usepackage[pdftex]{graphicx}
+
+% Absätze werden nicht eingezogen, sondern vertikal abgesetzt
+\setlength{\parindent}{0mm}
+\addtolength{\parskip}{0.4em}
+
+% Palatino und Helvetica statt Computer Modern als Standard-Fonts
+\usepackage{palatino}
+
+% Bibliographieeinstellungen
+\usepackage{natbib}
+\bibliographystyle{alpha}
+
+% lesbare Verweise
+\usepackage[pdftex,plainpages=false,pdfpagelabels]{hyperref}
+
+% Fonts in PDF hübsch machen
+\usepackage{ae}
+
+% nette URLs
+\usepackage{url}
+
+% Deutsch als Dokumentsprache
+\usepackage[ngerman]{babel}
+
+% für Boxen etc.
+\usepackage{framed}
+\definecolor{shadecolor}{rgb}{0.8,0.8,0.8}
+
+% Anführungszeichen sprachenabhängig machen
+\usepackage[babel]{csquotes}
+
+
+%----------------------------------------------------------------------------------
+% Seitenlayout
+%----------------------------------------------------------------------------------
+
+% Seiten-Kopfzeilen und -Fußzeilen
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE]{\slshape \nouppercase{\leftmark}}    % links:  "Seite      Kapitel"
+\fancyhead[LO]{\slshape \nouppercase{\rightmark}}   % rechts: "Kapitel    Seite"
+\fancyhead[RO,LE]{\bfseries \thepage}
+\renewcommand{\headrulewidth}{1pt} % Kopfzeilen unterstreichen
+\renewcommand{\footrulewidth}{0pt}
+
+\fancypagestyle{plain}{ % Keine Kapitel und Abschnitt auf Startseite start pages
+\fancyhf{}
+\fancyhead[RO,LE]{\bfseries \thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0pt}
+}
+
+% Kopfzeile auf linker Seite: "1  Einführung"
+\renewcommand{\chaptermark}[1]{%
+\markboth{\thechapter\ \ \ \ #1}{}}
+
+% Kopfzeile auf rechter Seite: "1.1  Basics"
+\renewcommand{\sectionmark}[1]{%
+\markright{\thesection\ \ \ \ #1}{}}
+
+% Seitenlayout
+\topmargin0mm
+\addtolength{\headheight}{2pt} % verhindert zu volle vboxes durch fancyhdr
+\footskip10mm % Abstand von unserem Rand zu Datum
+
+\newlength{\fullwidth} % Seites des Textes plus Randnotizen
+\setlength{\fullwidth}{\textwidth}
+\addtolength{\fullwidth}{\marginparsep}
+\addtolength{\fullwidth}{\marginparwidth}
+
+% Maximal drei Ebenen nummerieren
+\setcounter{secnumdepth}{3}
+% Maximale Gliederungstiefe, die noch ins Inhaltsverzeichnis aufgenommen wird
+\setcounter{tocdepth}{1}
+
+% zweispaltiges Layout möglich machen
+\usepackage{multicol}
+
+% Descriptions ohne Einzug
+\renewenvironment{description}[1][0pt]
+{\list{}{
+    \labelwidth=0pt \leftmargin=#1
+     \let\makelabel\descriptionlabel
+  }
+}
+{\endlist}
+
+\raggedbottom
+
+\newcommand{\fett}[1]{\textsf{\textbf{#1}}}
