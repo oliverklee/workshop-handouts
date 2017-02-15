@@ -1,0 +1,48 @@
+\chapter{SQL and TCA}
+
+\section{Formatting}
+For consistency with PSR-2, use 4 spaces for indentation.
+
+\section{Remove unneeded default-generated columns}
+
+To improve performance, remove the following columns if you do not need them (or do not add them in the first place):
+
+\begin{description}
+  \item[hidden, starttime, endtime] if you do not need this restrictions
+  \item[sys\_language\_uid, l10n\_parent, l10n\_diffsource, KEY language] if the records in this table will never be translated
+  \item[t3ver\_*] if you do not need versioning or workspaces for this table
+\end{description}
+
+
+\section{Table naming}
+
+\subsection{M:n association tables}
+
+Name association table names semantically instead of only with the names of the related tables.
+
+Bad:
+
+\begin{sqlcode}
+tx_programs_domain_model_frequentlyaskedquestioncategory
+\end{sqlcode}
+
+Good:
+
+\begin{sqlcode}
+tx_programs_domain_model_categorization
+\end{sqlcode}
+
+
+\section{Bulk inserts/reads}
+
+If you need to read or write thousands or records (e.\,g., for the initial import), consider using raw SQL instead of using the models. If you use the models, this will consume huge amounts of memory as each and every model will be instantiated and kept in memory.
+
+
+\section{Security headers in the TCA files}
+
+Always add the security line on top of all TCA files, \texttt{ext\_tables.php} and \texttt{ext\_localconf.php}:
+
+\begin{phpcode}
+defined('TYPO3_MODE') or die('Access denied.');
+\end{phpcode}
+

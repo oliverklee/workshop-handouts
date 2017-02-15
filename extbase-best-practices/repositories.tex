@@ -1,0 +1,107 @@
+\chapter{Repositories}
+
+
+\section{Naming}
+
+\subsection{Singular/Plural}
+
+Use the singular with CamelCase, not plural.
+
+Bad:
+
+\begin{phpcode}
+class OliverKlee\Books\Domain\Repository\UsersRepository {…}
+\end{phpcode}
+
+Good:
+
+\begin{phpcode}
+class OliverKlee\Books\Domain\Repository\UserRepository {…}
+\end{phpcode}
+
+
+\section{Performance}
+
+
+\subsection{Storage page}
+If you don’t need the storage page, setRespectStoragePage(false) for better performance:
+
+\begin{phpcode}
+public function initializeObject()
+{
+  /** @var QuerySettingsInterface $querySettings */
+  $querySettings = $this->objectManager->get(QuerySettingsInterface::class);
+  $querySettings->setRespectStoragePage(false);
+  $this->setDefaultQuerySettings($querySettings);
+}
+\end{phpcode}
+
+
+\subsection{Sorting}
+
+If you don’t need sorting, don’t set any sorting/ordering (for better performance). There is no code to add for this.
+
+
+\subsection{Sub-queries}
+
+If possible, move the \texttt{find*} method to another repository altogether. In this example, the method now is in the \texttt{GroupMembershipRepository} instead of the \texttt{GroupRepository}:
+
+\begin{phpcode}
+class GroupMembershipRepository extends Repository
+{
+  public function findByGroup(Group $group)
+  {
+    $query = $this->createQuery();
+    $query->matching($query->equals('group', $group))
+
+    return $query->execute();
+  }
+}
+\end{phpcode}
+
+You can also use queries that create JOINs instead of querying other repositories in a loop:
+
+\begin{phpcode}
+class GroupMembershipRepository extends Repository
+{
+  public function findByGroupName(string $groupName)
+  {
+    $query = $this->createQuery();
+    $query->matching($query->equals('group.name', $name))
+
+    return $query->execute();
+  }
+}
+\end{phpcode}
+
+
+\section{Safe LIKE queries}
+
+Make sure to always correctly escape in LIKE queries to avoid SQL injections.
+
+Bad:
+
+\begin{phpcode}
+public function findBySearchTerm($term)
+{
+  $query = $this->createQuery();
+  $query->like($searchField, '%' . $searchTerm . '%', false);
+
+  return $query->execute();
+}
+\end{phpcode}
+
+Good:
+
+\begin{phpcode}
+public function findBySearchTerm($term)
+{
+  $safeSearchTerm = $this->getDatabaseAdapter()
+    ->escapeStrForLike($searchTerm, $this->tableName);
+
+  $query = $this->createQuery();
+  $query->like($searchField, '%' . $safeSearchTerm . '%', false);
+
+  return $query->execute();
+}
+\end{phpcode}
