@@ -1,0 +1,34 @@
+\documentclass[a4paper,openany,twoside,titlepage,10pt]{scrbook}
+
+\input{../shared/util/latex-layout}
+\input{../shared/util/language-en}
+\input{../shared/util/code-styles}
+
+\author{Oliver Klee | \url{http://www.oliverklee.de/} | \texttt{@oliklee}}
+\title{Best practices with extbase and fluid}
+\date{Version as of \today}
+\pagestyle{headings}
+
+\begin{document}
+%\raggedbottom
+\frontmatter
+
+\maketitle
+
+\tableofcontents
+
+\mainmatter
+
+\input{domain-models}
+\input{repositories}
+
+\input{sql-tca}
+
+\input{javascript}
+\input{ajax}
+
+% \bibliography{../shared/bibliography/literatur}
+
+% \backmatter
+
+\end{document}
