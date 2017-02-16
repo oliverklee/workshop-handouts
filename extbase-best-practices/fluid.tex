@@ -1,0 +1,53 @@
+\chapter{Fluid templates}
+
+\section{What to put where}
+
+\subsection{Business logic}
+
+Move logic from templates into the models if it's business logic.
+
+\subsection{JavaScript}
+
+Don't use script tags or event handler attributes in your HTML. See the JavaScript section on page~\pageref{javascript} for solutions.
+
+\subsection{Data for JavaScript}
+
+Put data for JavaScript in data attributes, not in variables in script tags. This avoids XSS in that case.\footnote{\url{https://speakerdeck.com/helhum/fluid-xss}}
+
+\subsection{Partials}
+
+Use partials to avoid deep nesting.
+
+Instead of using lots of arguments for a partial, use specialized partials to improve readability.
+
+
+\section{Static images}
+
+For static images that do not need to be resized, use plain IMG tags instead of an image view helper. This makes the code shorter and the rendering faster.
+
+
+\section{Syntax and formatting}
+
+For consistency with PSR-2, use 4 spaces for indentation.
+
+
+\section{DOCTYPE and HTML element}
+Add a DOCTYPE and HTML element to your templates and layouts to help PhpStorm. (Also, the HTML element is the place to put your \texttt{xml:ns} attribute.)
+
+\subsection{Well-formed XML/HTML}
+
+Make sure your Fluid templates are well-formed HTML/XML:
+
+\begin{itemize}
+  \item Always close tags (unless they are self-closing), and don't put orphaned opening or closing tags in conditions. This might result in slightly more code (which is okay).
+  \item Use the inline form of view helpers if you need to use a view helper within an opening tag (e.g. to add HTML attributes or attribute values).
+\end{itemize}
+
+\subsection{Indentation}
+For consistency with PSR-2, use 4 spaces for indentation.
+
+\section{Tools}
+
+Use and configure PhpStorm auto-formatting.
+
+Use a converter\footnote{\url{http://www.fluid-converter.com/}} for converting view helpers in your templates to inline notation.
