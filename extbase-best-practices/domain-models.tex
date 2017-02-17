@@ -35,7 +35,9 @@ Good:
 
 \subsection{Method names}
 
-Only getters should be named get*. Other methods that are not regular getters should be named differently, e.\,g., calculate*, retrieve*, determine* etc.
+A name of a method should describe what the method does. One of the most common errors is to be not specific enough and name a method like getWhateverItReturns().
+
+As a rule of thumb: Only regular getters, which just return a property, should be named get*. Other methods should be named more specific, e.\,g., calculate*, retrieve*, determine* etc.
 
 Bad:
 
@@ -248,5 +250,3 @@ Examples for traits:
   \item \texttt{CreationDatable} for models that have a getter for the creation date
   \item \texttt{CachedRelationCount} for providing the code for accessing a cached relation count (as mentioned on page~\pageref{relation-count})
 \end{itemize}
-
-
