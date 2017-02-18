@@ -33,3 +33,5 @@
 *.xdy
 *.tdo
 _minted*
+.texpadtmp/
+
