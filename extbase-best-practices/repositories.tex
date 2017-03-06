@@ -67,7 +67,7 @@ class GroupMembershipRepository extends Repository
   public function findByGroupName(string $groupName)
   {
     $query = $this->createQuery();
-    $query->matching($query->equals('group.name', $name))
+    $query->matching($query->equals('group.name', $groupName))
 
     return $query->execute();
   }
