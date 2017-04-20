@@ -10,8 +10,10 @@ Dies sind die Handouts zu vielen meiner Workshops:
 
 ## Über mich (Oliver Klee)
 
-Ich bin der Maintainer der
-[PHPUnit.TYPO3-Extension](http://typo3.org/extensions/repository/view/phpunit),
+Ich bin der Autor des [Spielereaders](https://spielereader.org/),
+
+Außerdem bin ich der Maintainer der
+[PHPUnit-TYPO3-Extension](http://typo3.org/extensions/repository/view/phpunit),
 die im TYPO3-Extension-Repository (TER) verfügbar ist.
 
 Ihr könnt mich für
