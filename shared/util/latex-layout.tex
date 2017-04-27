@@ -36,7 +36,7 @@
 \usepackage{framed}
 \definecolor{shadecolor}{rgb}{0.8,0.8,0.8}
 
-% Anführungszeichen sprachenabhängig machen
+% Anführungszeichen sprachabhängig machen
 \usepackage[babel]{csquotes}
 
 
@@ -45,21 +45,7 @@
 %----------------------------------------------------------------------------------
 
 % Seiten-Kopfzeilen und -Fußzeilen
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[RE]{\slshape \nouppercase{\leftmark}}    % links:  "Seite      Kapitel"
-\fancyhead[LO]{\slshape \nouppercase{\rightmark}}   % rechts: "Kapitel    Seite"
-\fancyhead[RO,LE]{\bfseries \thepage}
-\renewcommand{\headrulewidth}{1pt} % Kopfzeilen unterstreichen
-\renewcommand{\footrulewidth}{0pt}
-
-\fancypagestyle{plain}{ % Keine Kapitel und Abschnitt auf Startseite start pages
-\fancyhf{}
-\fancyhead[RO,LE]{\bfseries \thepage}
-\renewcommand{\headrulewidth}{1pt}
-\renewcommand{\footrulewidth}{0pt}
-}
+\usepackage{scrlayer-scrpage}
 
 % Kopfzeile auf linker Seite: "1  Einführung"
 \renewcommand{\chaptermark}[1]{%
@@ -71,7 +57,6 @@
 
 % Seitenlayout
 \topmargin0mm
-\addtolength{\headheight}{2pt} % verhindert zu volle vboxes durch fancyhdr
 \footskip10mm % Abstand von unserem Rand zu Datum
 
 \newlength{\fullwidth} % Seites des Textes plus Randnotizen
