@@ -1,0 +1,68 @@
+%----------------------------------------------------------------------------------
+% Pakete und Parameter
+%----------------------------------------------------------------------------------
+
+% Pound-Zeichen statt $ in Code-Kommentaren fixen
+\usepackage[T1]{fontenc}
+
+% Input-Encoding für UTF-8
+\usepackage[utf8]{inputenc}
+
+% Mehr von der Seitenbreite nutzen
+\usepackage{a4wide}
+
+% Grafikpaket
+\usepackage{color}
+\usepackage[pdftex]{graphicx}
+
+% Absätze werden nicht eingezogen, sondern vertikal abgesetzt
+\setlength{\parindent}{0mm}
+\addtolength{\parskip}{0.4em}
+
+% Palatino und Helvetica statt Computer Modern als Standard-Fonts
+\usepackage{palatino}
+
+% lesbare Verweise
+\usepackage[pdftex,plainpages=false,pdfpagelabels]{hyperref}
+
+% nette URLs
+\usepackage{url}
+
+% für Boxen etc.
+\usepackage{framed}
+\definecolor{shadecolor}{rgb}{0.8,0.8,0.8}
+
+% Anführungszeichen sprachabhängig machen
+\usepackage[babel]{csquotes}
+
+
+%----------------------------------------------------------------------------------
+% Seitenlayout
+%----------------------------------------------------------------------------------
+
+% zweispaltiges Layout möglich machen
+\usepackage{multicol}
+
+% keine Seitenzahlen
+\pagenumbering{gobble}
+\pagestyle{empty}
+
+% Seitenlayout
+\topmargin0mm
+\footskip0mm
+
+% Descriptions ohne Einzug
+\renewenvironment{description}[1][0pt]
+{\list{}{
+    \labelwidth=0pt \leftmargin=#1
+     \let\makelabel\descriptionlabel
+  }
+}
+{\endlist}
+
+\raggedbottom
+\raggedright
+
+\newcommand{\fett}[1]{\textsf{\textbf{#1}}}
+
+\newcommand{\answerspace}{\vspace{2.8em}}
