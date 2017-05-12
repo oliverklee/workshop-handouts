@@ -1,0 +1,178 @@
+\documentclass[a4paper,12pt]{scrartcl}
+
+\input{../shared/util/single-page-layout}
+\input{../shared/util/language-de}
+
+\begin{document}
+\raggedbottom
+
+\section{Übungen zu Git}
+
+\subsection{Git-Installation}
+\begin{enumerate}
+  \item Installiert euch Git:
+    \begin{itemize}
+      \item Windows: \url{https://git-scm.com/download/win}
+      \item Linux: Ubuntu-/Debian-Pakete \texttt{git} und \texttt{gitk}
+      \item Mac: \url{https://git-scm.com/download/mac} oder das Paket \texttt{git} via MacPorts
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Bash/Linux-Kommandozeile}
+\begin{enumerate}
+  \item Lasst euch anzeigen, in welchem Verzeichnis ihr gerade seid.
+  \item Lasst euch anzeigen, welche Verzeichnisse und Dateien es im aktuellen Verzeichnis gibt.
+  \item Wechselt in ein Unterverzeichnis.
+  \item Lasst euch wieder anzeigen, in welchem Verzeichnis ihr gerade seid.
+  \item Wechselt wieder ein Verzeichnis nach oben.
+  \item Wechselt mit \texttt{cd -} wieder in das Unterverzeichnis und wieder zurück.
+  \item Wechselt in das Verzeichnis, in dem ihr die Übungen für heute machen möchtet, und in dem ihr Dateien anlegen möchtet.
+  \item Legt eine leere Datei an (\texttt{touch}).
+  \item Schaut, dass die Datei jetzt tatsächlich existiert.
+  \item Benennt die Datei um.
+  \item Schaut, dass die Datei jetzt anders heißt.
+  \item Löscht die Datei.
+  \item Schaut, dass die Datei jetzt tatsächlich nicht mehr existiert.
+\end{enumerate}
+
+\subsection{Git-Konfiguration}
+\begin{enumerate}
+   \item Richtet euch Tab-Autovervollständigung für Git ein. Ihr könnt es testen, indem ihr \texttt{git check} tippt und dann Tab drückt. Wenn aus \texttt{check} ein \texttt{checkout} wird, tut's die Autovervollständigung.
+     \begin{itemize}
+       \item Windows: sollte schon ab Werk gehen
+       \item Linux und Mac: Folgt der Anleitung\footnote{\url{https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks}}.
+     \end{itemize}
+  \item Richtet euch diese Sachen in Git ein und prüft die Einstellungen danach mit \texttt{git config $--$list}. Ersetzt dabei in den ersten beiden Zeilen die Platzhalter mit eurem echten vollen Namen und eurer Mailadresse.
+\end{enumerate}
+
+\begin{verbatim}
+git config --global user.name "Jane Doe"
+git config --global user.email "jane.doe@example.com"
+git config --global color.ui auto
+git config --global branch.autosetupmerge always
+git config --global rerere.enabled true
+git config --global pull.rebase true
+git config --global push.default simple
+git config --global core.precomposeunicode true
+git config --global core.quotepath false
+git config --global branch.autosetuprebase always
+git config --global rebase.autostash true
+git config --global core.autocrlf false
+git config --global core.eol lf
+\end{verbatim}
+
+
+
+\subsection{Lokales Arbeiten}
+
+\begin{enumerate}
+  \item Lasst euch die Git-Hilfe anzeigen.
+  \item Lasst euch die Git-Hilfe für \texttt{git init} anzeigen. Falls die Hilfe auf der Kommandozeile angezeigt wird, kommt ihr mit der \texttt{q}-Taste wieder raus.
+  \item Legt das Verzeichnis an, mit dem ihr lokal üben möchtet, und wechselt in das Verzeichnis.
+  \item Legt ein leeres Git-Repository an.
+  \item Lasst euch den Status des Repositories anzeigen.
+  \item Legt eine kleine Textdatei \texttt{hans.txt} an.
+  \item Lasst euch den Status anzeigen.
+  \item Fügt die Datei zur Staging-Area hinzu.
+  \item Lasst euch den Status anzeigen.
+  \item Lasst euch die Unterschiede zum letzten Commit anzeigen.
+  \item Lasst euch die Unterschiede der Staging-Area zum letzten Commit anzeigen.
+  \item Committet die Änderungen. Gebt dabei die Commit-Message direkt mit an.
+  \item Lasst euch den Status anzeigen.
+  \item Lasst euch das Log anzeigen.
+  \item Lasst euch den letzten Commit anzeigen.
+  \item Lasst euch die Liste der im letzen Commit geänderten Dateien anzeigen.
+  \item Und jetzt noch einmal dasselbe mit der Commit-ID.
+  \item Bearbeitet die existierende Datei \texttt{hans.txt} und legt außerdem eine zweite Datei \texttt{wurst.txt} neu an.
+  \item Lasst euch die Unterschiede zum letzten Commit anzeigen. (Mit \texttt{q} kommt ihr da wieder raus.)
+  \item Fügt die Datei zur Staging-Area hinzu.
+  \item Lasst euch den Status anzeigen.
+  \item Lasst euch die Unterschiede zum letzten Commit anzeigen.
+  \item Lasst euch die Unterschiede der Staging-Area zum letzten Commit anzeigen.
+  \item Commited die Änderungen, benutzt aber diesmal für die Commit-Message einen separaten Editor, indem ihr sie nicht direkt schon auf der Kommandozeile angebt.
+  \item Lasst euch Status und Log anzeigen.
+  \item Bearbeitet \texttt{hans.txt}. Commit die Datei, ohne vorher ein explizites \texttt{add} zu machen.
+  \item Lasst euch das Log einzeilig anzeigen.
+\end{enumerate}
+
+\subsection{Schadensbegrenzung}
+\begin{enumerate}
+  \item Bearbeitet die \texttt{hans.txt} und fügt diese zum letzten Commit hinzu.  
+  \item Lasst euch das Log anzeigen.
+  \item Bearbeitet \texttt{hans.txt} und setzt die Datei dann wieder die Version aus dem letzten Commit zurück.
+  \item Setzt \texttt{hans.txt} auf die Version auf dem vorletzten Commit zurück (ohne zu commiten).
+  \item Macht den kompletten letzten Commit rückgängig.
+  \item Ändert eine Datei. Bringt die Änderungen mit dem Stash in Sicherheit.
+  \item Holt die Änderungen wieder aus dem Stash.
+  \item Setzt die Datei wieder auf den Ursprungszustand zurück.
+\end{enumerate}
+
+\subsection{Branches}
+\begin{enumerate}
+  \item Lasst euch anzeigen, welche Branches es gibt und auf welchem Branch ihr gerade seid.
+  \item Legt einen Branch \texttt{pinguin} an.
+  \item Wechselt auf den Branch.
+  \item Legt in dem Branch eine Datei \texttt{watscheln.txt} an und committet sie.
+  \item Schaut euch das Log an.
+  \item Wechselt wieder auf den \texttt{master}-Branch und schaut euch wieder das Log an.
+  \item Lasst euch den Unterschied zum \texttt{pinguin}-Branch anzeigen.
+  \item Wechselt mit \texttt{git checkout -} zum \texttt{pinguin} und wieder zurück zum \texttt{master}.
+  \item Merget den \texttt{pinguin}-Branch in den master und schaut euch das Log an.
+  \item Löscht den \texttt{pinguin}-Branch.
+  \item Legt mit einem Kommando einen Branch \texttt{nacktmull} an und wechselt direkt in den Branch.
+  \item Legt eine Datei \texttt{frittiertes-mars.txt} an und committed sie.
+  \item Wechselt wieder in den \texttt{master}.
+  \item Löscht den {nacktmull}-Branch, ohne ihn zu mergen.
+\end{enumerate}
+
+\subsection{Rebase und Konflikte}
+\begin{enumerate}
+  \item Legt einen Branch \texttt{tee} mit ein paar Zeilen Text an, wechselt in den Branch, legt dort eine Datei \texttt{earl grey.txt} (mit Leerzeichen!) an und committed sie.
+  \item Wechselt in den \texttt{master}, legt dort eine Datei {brot.txt} an und committed sie.
+  \item Wechselt auf den \texttt{tee}-Branch und rebased von \texttt{master}.
+  \item Wechselt in den \texttt{master}, bearbeitet \texttt{brot.txt} und committed die Änderungen.
+  \item Wechselt nach \texttt{tee}, bearbeitet in \texttt{brot.txt} dieselben Zeilen und committed die Änderungen.
+  \item Rebased von \texttt{master} und lasst euch den Status der Konflikte anzeigen.
+  \item Brecht das Rebase ab.
+  \item Rebased noch einmal. Löst diesmal die Konflikte im Editor, added die Datei und führt den Rebase dann zu Ende.
+\end{enumerate}
+
+
+\subsection{RSA-Keys und Accounts}
+\begin{enumerate}
+  \item Erzeugt euch ein RSA-Schlüsselpaar (falls noch nicht geschehen).
+  \item Loggt euch bei GitHub ein und ladet euren öffentlichen RSA-Schlüssel hoch.
+  \item Loggt euch beim MHN-GitLab ein und ladet euren öffentlichen RSA-Schlüssel hoch (falls ihr einen MHN-Account habt).
+  \item Teilt Oli euren GitHub-Usernamen mit und bittet ihn, euch zum Übungs-Repository hinzuzufügen.
+\end{enumerate}
+
+\subsection{Verteiltes Arbeiten}
+\begin{enumerate}
+  \item Klont euch das Übungsrepository von GitHub. Achtet dabei darauf dass ihr es per SSH klont und nicht per HTTPS.
+  \item Wechselt in das Verzeichnis des geklonten Repositories.
+  \item Lasst euch die Remotes anzeigen.
+  \item Und jetzt mit den URLs.
+  \item Lasst euch die lokalen Branches anzeigen.
+  \item Lasst euch die Remote-Branches anzeigen.
+  \item Check den \texttt{gurkensalat}-Remote-Branch aus und wechselt direkt auf den Branch.
+  \item Wartet, bis Oli etwas geändert und gepusht hat.
+  \item Wechselt wieder auf den \texttt{master} und löscht den lokalen \texttt{gurkensalat}-Branch wieder.
+  \item Pullt euch die Änderungen.
+  \item Legt einen Branch an, legt dort einen Datei an und committed sie.
+  \item Wartet, bis Oli etwas geändert und gepusht hat.
+  \item Wechselt zum \texttt{master}, pullt, wechselt zu eurem Branch rebased, wechselt wieder zu \texttt{master}, merged euren Branch, pusht, und löscht euren Branch.
+\end{enumerate}
+
+\subsection{Noch mehr Schadensbegrenzung}
+\begin{enumerate}
+  \item Erzeugt einen Branch nicht von \texttt{master}, sondern vom vorletzten Commit von \texttt{master}. Löscht den Branch dann wieder.
+  \item Schaut euch das Reflog an.
+  \item Stellt den gelöschten Branch \texttt{nacktmull} wieder her.
+  \item Wechselt auf den Branch.
+  \item Vertauscht die letzten beiden Commits per interaktivem Rebase.
+  \item Löscht den vorletzten Commit aus dem Branch (per interaktivem Rebase).
+  \item Wechselt wieder auf den \texttt{master} und löscht den \texttt{nacktmull}-Branch.
+\end{enumerate}
+
+
+\end{document}
