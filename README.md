@@ -7,6 +7,7 @@ Dies sind die Handouts zu vielen meiner Workshops:
 * [Feedback-Fragebogen](feedback-fragebogen) (DE) für alle Workshops
 * [Train the Trainer](train-the-trainer) (DE)
 * [Best-Practices mit extbase/fluid](extbase-best-practices) (EN)
+* [Git](git) (DE)
 
 
 ## Über mich (Oliver Klee)
