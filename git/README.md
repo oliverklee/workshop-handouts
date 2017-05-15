@@ -6,6 +6,39 @@
 * [Exercises](git-exercises-de.pdf) (DE)
 
 
+## Installing and configuring Git
+
+### Installation
+
+* [Windows download]()https://git-scm.com/download/win)
+* Linux: Ubuntu/Debian packages ```git``` and ```gitk```
+* [Mac download](https://git-scm.com/download/mac) or the package ```git``` from MacPorts
+
+### Tab completion
+
+* Windows: It's included by default.
+* Mac and Linux: Follow the [instructions](https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks).
+
+### Recommended git configuration
+
+You'll need to replace the placeholders with your real full name and email address.
+
+```
+git config --global user.name "Jane Doe"
+git config --global user.email "jane.doe@example.com"
+git config --global color.ui auto
+git config --global branch.autosetupmerge always
+git config --global rerere.enabled true
+git config --global pull.rebase true
+git config --global push.default simple
+git config --global core.precomposeunicode true
+git config --global core.quotepath false
+git config --global branch.autosetuprebase always
+git config --global rebase.autostash true
+git config --global core.autocrlf false
+git config --global core.eol lf
+```
+
 ## Continue learning
 
 
