@@ -17,7 +17,7 @@
 
 #### Git from the bottom up (article)
 * [online HTML version](https://jwiegley.github.io/git-from-the-bottom-up/)
-* [free e-ook](https://github.com/johnrezzo/git-from-the-bottom-up-ebook)
+* [free e-book](https://github.com/johnrezzo/git-from-the-bottom-up-ebook)
 * [PDF version (outdated)](http://ftp.newartisans.com/pub/git.from.bottom.up.pdf)
 
 
