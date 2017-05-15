@@ -10,12 +10,7 @@
 
 \subsection{Git-Installation}
 \begin{enumerate}
-  \item Installiert euch Git:
-    \begin{itemize}
-      \item Windows: \url{https://git-scm.com/download/win}
-      \item Linux: Ubuntu-/Debian-Pakete \texttt{git} und \texttt{gitk}
-      \item Mac: \url{https://git-scm.com/download/mac} oder das Paket \texttt{git} via MacPorts
-    \end{itemize}
+  \item Installiert euch Git (siehe die README auf GitHub).
 \end{enumerate}
 
 \subsection{Bash/Linux-Kommandozeile}
@@ -38,29 +33,8 @@
 \subsection{Git-Konfiguration}
 \begin{enumerate}
    \item Richtet euch Tab-Autovervollständigung für Git ein. Ihr könnt es testen, indem ihr \texttt{git check} tippt und dann Tab drückt. Wenn aus \texttt{check} ein \texttt{checkout} wird, tut's die Autovervollständigung.
-     \begin{itemize}
-       \item Windows: sollte schon ab Werk gehen
-       \item Linux und Mac: Folgt der Anleitung\footnote{\url{https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks}}.
-     \end{itemize}
-  \item Richtet euch diese Sachen in Git ein und prüft die Einstellungen danach mit \texttt{git config $--$list}. Ersetzt dabei in den ersten beiden Zeilen die Platzhalter mit eurem echten vollen Namen und eurer Mailadresse.
+  \item Konfiguriert Git anhand der Anleitung im README auf GitHub. Prüft die Einstellungen danach mit \texttt{git config $--$list}. Ersetzt dabei in den ersten beiden Zeilen die Platzhalter mit eurem echten vollen Namen und eurer Mailadresse.
 \end{enumerate}
-
-\begin{verbatim}
-git config --global user.name "Jane Doe"
-git config --global user.email "jane.doe@example.com"
-git config --global color.ui auto
-git config --global branch.autosetupmerge always
-git config --global rerere.enabled true
-git config --global pull.rebase true
-git config --global push.default simple
-git config --global core.precomposeunicode true
-git config --global core.quotepath false
-git config --global branch.autosetuprebase always
-git config --global rebase.autostash true
-git config --global core.autocrlf false
-git config --global core.eol lf
-\end{verbatim}
-
 
 
 \subsection{Lokales Arbeiten}
@@ -97,7 +71,7 @@ git config --global core.eol lf
 
 \subsection{Schadensbegrenzung}
 \begin{enumerate}
-  \item Bearbeitet die \texttt{hans.txt} und fügt diese zum letzten Commit hinzu.  
+  \item Bearbeitet die \texttt{hans.txt} und fügt diese zum letzten Commit hinzu.
   \item Lasst euch das Log anzeigen.
   \item Bearbeitet \texttt{hans.txt} und setzt die Datei dann wieder die Version aus dem letzten Commit zurück.
   \item Setzt \texttt{hans.txt} auf die Version auf dem vorletzten Commit zurück (ohne zu commiten).
@@ -142,7 +116,6 @@ git config --global core.eol lf
 \begin{enumerate}
   \item Erzeugt euch ein RSA-Schlüsselpaar (falls noch nicht geschehen).
   \item Loggt euch bei GitHub ein und ladet euren öffentlichen RSA-Schlüssel hoch.
-  \item Loggt euch beim MHN-GitLab ein und ladet euren öffentlichen RSA-Schlüssel hoch (falls ihr einen MHN-Account habt).
   \item Teilt Oli euren GitHub-Usernamen mit und bittet ihn, euch zum Übungs-Repository hinzuzufügen.
 \end{enumerate}
 
