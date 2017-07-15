@@ -143,6 +143,10 @@ This is an incomplete list of examples.
 * t-shirt cuts by gender (all men get square cuts, all women get fitted cuts)
 * calling women "girls"
 * using "mom" for the concept of "non-technical user"
+* [have required "first name" and "last name" fields for the name](https://www.w3.org/International/questions/qa-personal-names)
+  ([another article on names](http://www.rogerdarlington.co.uk/useofnames.html))
+* [have required fields for ZIP code, street name and street number](https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses/)
+* [have only the two options "male" and "female" for the gender](https://medium.com/@malpinder/falsehoods-programmers-believe-about-gender-cf1a55085ab2)
 
 
 ## What other communities/events do
@@ -150,7 +154,8 @@ This is an incomplete list of examples.
 This also is an incomplete list of examples.
 
 * having a [community/project code of conduct](http://contributor-covenant.org/)
-* having a [code of conduct for events](http://confcodeofconduct.com/)
+* having a [code of conduct for events](http://confcodeofconduct.com/),
+  put it on the conference website
   **and enforce it**
   ([FAQ](https://www.ashedryden.com/blog/codes-of-conduct-101-faq)
   ([another example](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy)
@@ -185,3 +190,6 @@ This also is an incomplete list of examples.
   that will publicly appear on social networks
 * ask speakers from [speakerinnen.org](https://speakerinnen.org/)
 * [provide information about accessibility on the conference website](https://modelviewculture.com/pieces/organizing-more-accessible-tech-events)
+* have a single (long) input field for the full name
+* have a single textarea input for the full address
+* have a free-text input field for the gender
