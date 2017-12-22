@@ -96,6 +96,7 @@ Good:
 \begin{phpcode}
 public function findBySearchTerm($term)
 {
+  // This is the TYPO3 7.6 version. 8.7 will be different.
   $safeSearchTerm = $this->getDatabaseAdapter()
     ->escapeStrForLike($searchTerm, $this->tableName);
 
