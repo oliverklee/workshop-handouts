@@ -43,7 +43,7 @@ git config --global core.eol lf
 
 #### Pro Git (book)
 - [online HTML version](https://git-scm.com/book/en/v2)
-- [paper version](http://amzn.to/2rg0yEO) (affiliate link)
+- [paper version](https://amzn.to/2rg0yEO) (affiliate link)
 
 #### Git from the bottom up (article)
 - [online HTML version](https://jwiegley.github.io/git-from-the-bottom-up/)
@@ -61,7 +61,7 @@ git config --global core.eol lf
 - [Git Real 2](https://www.codeschool.com/courses/git-real-2) (paid)
 
 #### Git Branching
-- [Learn Git Branching](http://learngitbranching.js.org/)
+- [Learn Git Branching](https://learngitbranching.js.org/)
 
 #### Git Immersion (introductory game with Ruby)
 - [http://gitimmersion.com/](Git Immersion)

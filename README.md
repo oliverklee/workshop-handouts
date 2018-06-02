@@ -17,7 +17,7 @@ Zusätzlich liegt hier noch:
 Ich bin der Autor des [Spielereaders](https://spielereader.org/),
 
 Außerdem bin ich der Maintainer der
-[PHPUnit-TYPO3-Extension](http://typo3.org/extensions/repository/view/phpunit),
+[PHPUnit-TYPO3-Extension](https://extensions.typo3.org/extension/phpunit/),
 die im TYPO3-Extension-Repository (TER) verfügbar ist.
 
 Ihr könnt mich für
@@ -47,5 +47,5 @@ für euch kostenlos verbreiten, bearbeiten und nutzen könnt
 - Lizenz nennen: Wenn ihr die Handouts weiter verbreitet, müsst ihr dabei
   auch die Lizenzbedingungen nennen oder beifügen.
 
-Die [ausführliche Version dieser Lizenz](http://creativecommons.org/licenses/by-sa/4.0/)
+Die [ausführliche Version dieser Lizenz](https://creativecommons.org/licenses/by-sa/4.0/)
 findet ihr online.
