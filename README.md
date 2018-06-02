@@ -5,6 +5,7 @@ Dies sind die Handouts zu vielen meiner Workshops:
 * [Best-Practices mit extbase/fluid](extbase-best-practices) (EN)
 * [Diversity](diversity/README.md) (EN)
 * [Git](git) (DE)
+* [Composer](composer) (DE)
 * [Train the Trainer](train-the-trainer) (DE)
 
 Zusätzlich liegt hier noch:
