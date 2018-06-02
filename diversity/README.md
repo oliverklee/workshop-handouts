@@ -153,7 +153,7 @@ This is an incomplete list of examples.
 
 This also is an incomplete list of examples.
 
-* having a [community/project code of conduct](http://contributor-covenant.org/)
+* having a [community/project code of conduct](https://contributor-covenant.org/)
 * having a [code of conduct for events](http://confcodeofconduct.com/),
   put it on the conference website
   **and enforce it**
