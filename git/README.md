@@ -50,6 +50,10 @@ git config --global core.eol lf
 - [free e-book](https://github.com/johnrezzo/git-from-the-bottom-up-ebook)
 - [PDF version (outdated)](http://ftp.newartisans.com/pub/git.from.bottom.up.pdf)
 
+## Cheat sheets
+- [Unix/Linux Command Reference](https://files.fosswire.com/2007/08/fwunixref.pdf)
+- [Git Cheat Sheet](https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/02/cheat-sheets.pdf)
+
 ### Online courses
 
 #### Codecademy
@@ -64,10 +68,10 @@ git config --global core.eol lf
 - [Learn Git Branching](https://learngitbranching.js.org/)
 
 #### Git Immersion (introductory game with Ruby)
-- [http://gitimmersion.com/](Git Immersion)
+- [Git Immersion](http://gitimmersion.com/)
 
 #### Githug (introductory game with Ruby)
-- [https://github.com/Gazler/githug](Githug)
+- [Githug](https://github.com/Gazler/githug)
 
 ### The Git Game (advanced)
 
