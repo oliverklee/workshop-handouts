@@ -54,6 +54,10 @@ git config --global core.eol lf
 - [Unix/Linux Command Reference](https://files.fosswire.com/2007/08/fwunixref.pdf)
 - [Git Cheat Sheet](https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/02/cheat-sheets.pdf)
 
+## Git workflows
+- [GitHub flow](https://guides.github.com/introduction/flow/)
+- [Git Flow](https://leanpub.com/git-flow/read)
+
 ### Online courses
 
 #### Codecademy
