@@ -15,8 +15,11 @@
    möchtet, und in dem ihr Dateien anlegen möchtet.
 1. Legt eine leere Datei an (`touch`).
 1. Schaut, dass die Datei jetzt tatsächlich existiert.
+1. Schaut noch einmal - aber benutzt diesmal den Befehl in der History über die
+   Cursortasten.
 1. Benennt die Datei um.
-1. Schaut, dass die Datei jetzt anders heißt.
+1. Schaut, dass die Datei jetzt anders heißt (indem ihr mit CTRL + R in der
+   History sucht).
 1. Löscht die Datei.
 1. Schaut, dass die Datei jetzt tatsächlich nicht mehr existiert.
 
@@ -141,6 +144,11 @@
 1. Löscht den vorletzten Commit aus dem Branch (per interaktivem Rebase).
 1. Wechselt wieder auf den `master` und löscht den `nacktmull`-Branch.
 
+## .gitignore
+1. Bearbeitet die .gitignore so, dass Dateien ignoriert werden, die Endung
+   `.html` haben, sowie die Datei "eigene-notizen.txt" (nur im Hauptverzeichnis
+   des Projektes). Testet beides.
+
 ## Bonusaufgaben
-1. Spielt [The Git Game](https://github.com/git-game/git-game) durch.
-1. Spielt [The Git Game 2](https://github.com/git-game/git-game-v2) durch.
+1. Spielt [The Git Game](https://github.com/git-game/git-game).
+1. Spielt [The Git Game 2](https://github.com/git-game/git-game-v2).
