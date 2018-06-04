@@ -174,6 +174,17 @@
 1. Pull und prunet euer lokales Repository und löscht lokal alle remote
    gelöschten Branches.
 
+## Open-Source-Arbeit
+1. Forkt das [https://github.com/oliverklee/workshop-handouts/](Handouts-Repository).
+2. Klont euch euren Fork auf lokal.
+3. Legt euch lokal ein `upstream`-Remote an.
+4. Legt einen lokalen Branch an und behebt dort einen Tippfehler (oder
+   verbessert etwas anderes).
+5. Erstellt daraus einen Pull-Request.
+6. Wartet, bis Oliver euren PR gemergt hat.
+7. Bringt dann euren Fork auf den aktuellen Stand und löscht den gemergten
+   Branch.
+
 ## Bonusaufgaben
 1. Spielt [The Git Game](https://github.com/git-game/git-game).
 1. Spielt [The Git Game 2](https://github.com/git-game/git-game-v2).
