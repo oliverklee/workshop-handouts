@@ -1,5 +1,7 @@
 # Übungen zu Git
 
+Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
+
 ## Git-Installation
 1. Installiert euch Git (siehe die [README](README.md)).
 
@@ -33,7 +35,6 @@
    Mailadresse.
 
 ## Lokales Arbeiten
-
 1. Lasst euch die Git-Hilfe anzeigen.
 1. Lasst euch die Git-Hilfe für `git init` anzeigen. Falls die Hilfe auf der
    Kommandozeile angezeigt wird, kommt ihr mit der `q`-Taste wieder raus.
@@ -174,17 +175,35 @@
 1. Pull und prunet euer lokales Repository und löscht lokal alle remote
    gelöschten Branches.
 
-## Open-Source-Arbeit
-1. Forkt das [https://github.com/oliverklee/workshop-handouts/](Handouts-Repository).
-2. Klont euch euren Fork auf lokal.
-3. Legt euch lokal ein `upstream`-Remote an.
-4. Legt einen lokalen Branch an und behebt dort einen Tippfehler (oder
-   verbessert etwas anderes).
-5. Erstellt daraus einen Pull-Request.
-6. Wartet, bis Oliver euren PR gemergt hat.
-7. Bringt dann euren Fork auf den aktuellen Stand und löscht den gemergten
+## Tags
+1. Klont euch das [TDD-Seed-Projekt](https://github.com/oliverklee/tdd-seed),
+   schaut euch die Tags an und auf GitHub die Releases. 
+1. Erzeugt ein Tag für euren Geburtstag, z.B. `v2.4.75` für den 2.4.1975.
+1. Pusht alle Tags auf remote.
+1. Schaut auf GitHub bei dem Projekt im Tab "Releases" nach.
+1. Löscht das Tag wieder lokal.
+1. Versucht, den Tag lokal wieder mit `git checkout <tagname>` auszuchec
+1. Löscht das Tag wieder von origin.
+
+## Open-Source-Arbeit mit Forks
+1. Forkt das
+   [Workshop-Handouts-Repository](https://github.com/oliverklee/workshop-handouts/).
+1. Klont euch euren Fork auf lokal.
+1. Legt euch lokal ein `upstream`-Remote an.
+1. Sucht euch einen bisher leeren Abschnitt im [Git-Cheatsheet](git-cheatsheet-de.md)
+   aus und erstellt dafür ein Ticket. Legt dafür einen branch an und schreibt
+   diesen Abschnitt in
+   [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+1. Erstellt daraus einen Pull-Request.
+1. Wartet auf Review-Feedback. Überarbeitet und rebaset euren PR nach Bedarf. 
+1. Wartet, bis Oliver euren PR gemergt hat.
+1. Bringt dann euren Fork auf den aktuellen Stand und löscht den gemergten
    Branch.
 
 ## Bonusaufgaben
+Falls ihr die Basics noch einmal wiederholen möchtet:
+Spielt [Try Git](https://try.github.io/).
+
+Falls ihr Lust auf Knobelaufgaben habt:
 1. Spielt [The Git Game](https://github.com/git-game/git-game).
 1. Spielt [The Git Game 2](https://github.com/git-game/git-game-v2).
