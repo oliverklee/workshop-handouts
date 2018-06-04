@@ -147,10 +147,17 @@
 1. Schaut euch das Reflog an.
 1. Stellt den gelöschten Branch `nacktmull` wieder her.
 1. Wechselt auf den Branch.
-1. Vertauscht die letzten beiden Commits per interaktivem Rebase.
 1. Bearbeitet den obersten Commit per `amend`.
+1. Vertauscht die letzten beiden Commits per interaktivem Rebase.
 1. Löscht den vorletzten Commit aus dem Branch (per interaktivem Rebase).
 1. Wechselt wieder auf den `master` und löscht den `nacktmull`-Branch.
+
+## .gitignore
+1. Bearbeitet die .gitignore so, dass Dateien ignoriert werden, die Endung
+   `.html` haben, sowie die Datei `eigene-notizen.txt` (nur im Hauptverzeichnis
+   des Projektes). Testet beides.
+1. Legt ein Verzeichnis `logs` an. Sorgt dann dafür, dass dieses Verzeichnis
+   im Git auftaucht, aber alle Dateien darin nicht.
 
 ## Verteiltes Arbeiten (Fortsetzung)
 1. Erzeugt im Übungsprojekt einen lokalen Branch mit eurem eigenen Namen. Legt
@@ -166,13 +173,6 @@
    positiv) und mergt. Löscht den Remote-Branch.
 1. Pull und prunet euer lokales Repository und löscht lokal alle remote
    gelöschten Branches.
-
-## .gitignore
-1. Bearbeitet die .gitignore so, dass Dateien ignoriert werden, die Endung
-   `.html` haben, sowie die Datei `eigene-notizen.txt` (nur im Hauptverzeichnis
-   des Projektes). Testet beides.
-1. Legt ein Verzeichnis `logs` an. Sorgt dann dafür, dass dieses Verzeichnis
-   im Git auftaucht, aber alle Dateien darin nicht.
 
 ## Bonusaufgaben
 1. Spielt [The Git Game](https://github.com/git-game/git-game).
