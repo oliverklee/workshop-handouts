@@ -133,13 +133,13 @@
 1. Lasst euch die lokalen Branches anzeigen.
 1. Lasst euch die Remote-Branches anzeigen.
 1. Check den `gurkensalat`-Remote-Branch aus und wechselt direkt auf den Branch.
-1. Wartet, bis Oliver etwas geändert und gepusht hat.
+1. Wartet, bis Oliver etwas geändert und gepusht hat. Pullt euch die Änderungen.
 1. Wechselt wieder auf den `master` und löscht den lokalen `gurkensalat`-Branch
    wieder.
 1. Pullt euch die Änderungen.
 1. Legt einen Branch an, legt dort einen Datei an und committet sie.
 1. Wartet, bis Oliver etwas geändert und gepusht hat.
-1. Wechselt zum `master`, pullt, wechselt zu eurem Branch rebased, wechselt
+1. Wechselt zum `master`, pullt, wechselt zu eurem Branch, rebased, wechselt
    wieder zu `master`, merget euren Branch, pusht, und löscht euren Branch.
 
 ## Noch mehr Schadensbegrenzung
