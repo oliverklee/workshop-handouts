@@ -148,8 +148,10 @@
 
 ## .gitignore
 1. Bearbeitet die .gitignore so, dass Dateien ignoriert werden, die Endung
-   `.html` haben, sowie die Datei "eigene-notizen.txt" (nur im Hauptverzeichnis
+   `.html` haben, sowie die Datei `eigene-notizen.txt` (nur im Hauptverzeichnis
    des Projektes). Testet beides.
+1. Legt ein Verzeichnis `logs` an. Sorgt dann dafür, dass dieses Verzeichnis
+   im Git auftaucht, aber alle Dateien darin nicht.
 
 ## Bonusaufgaben
 1. Spielt [The Git Game](https://github.com/git-game/git-game).
