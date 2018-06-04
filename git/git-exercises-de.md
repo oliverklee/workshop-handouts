@@ -110,6 +110,8 @@
 1. Brecht das Rebase ab.
 1. Rebased noch einmal. Löst diesmal die Konflikte im Editor, added die Datei
    und führt den Rebase dann zu Ende.
+1. Legt einen Branch an, legt dort einen Commmit an und cherry-pickt diesen auf
+   einen anderen Branch. 
 
 ## RSA-Keys und Accounts
 1. Erzeugt euch ein RSA-Schlüsselpaar (falls noch nicht geschehen).
