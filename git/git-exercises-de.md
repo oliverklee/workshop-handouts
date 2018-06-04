@@ -86,7 +86,7 @@
 1. Legt in dem Branch eine Datei `watscheln.txt` an und committet sie.
 1. Schaut euch das Log an.
 1. Wechselt wieder auf den `master`-Branch und schaut euch wieder das Log an.
-1. Lasst euch den Unterschied zum `pinguin}-Branch anzeigen.
+1. Lasst euch den Unterschied zum `pinguin`-Branch anzeigen.
 1. Wechselt mit `git checkout -` zum `pinguin` und wieder zurück zum `master`.
 1. Merget den `pinguin`-Branch in den master und schaut euch das Log an.
 1. Löscht den `pinguin`-Branch.
@@ -99,7 +99,7 @@
 1. Legt einen Branch `tee` an, wechselt in den Branch, legt dort eine Datei
    `earl grey.txt` (mit Leerzeichen!) mit ein paar Zeilen Text an und committet
    sie.
-1. Wechselt in den `master`, legt dort eine Datei {brot.txt} an und committet
+1. Wechselt in den `master`, legt dort eine Datei `brot.txt` an und committet
    sie.
 1. Wechselt auf den `tee`-Branch und rebased von `master`.
 1. Wechselt in den `master`, bearbeitet `brot.txt` und committet die
