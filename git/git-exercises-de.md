@@ -114,8 +114,13 @@
    einen anderen Branch. 
 
 ## RSA-Keys und Accounts
-1. Erzeugt euch ein RSA-Schlüsselpaar (falls noch nicht geschehen).
+1. Erzeugt euch ein RSA-Schlüsselpaar **ohne Passphrase** (falls noch nicht
+   geschehen). Hier die Anleitungen, wie man das unter Windows macht:
+   - https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+   - https://dhue.de/git-fur-windows-installieren-und-ssh-keys-nutzen/
+   - https://jdblischak.github.io/2014-09-18-chicago/novice/git/05-sshkeys.html
 1. Loggt euch bei GitHub ein und ladet euren öffentlichen RSA-Schlüssel hoch.
+   - https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 1. Teilt Oliver euren GitHub-Usernamen mit und bittet ihn, euch zum
    Übungs-Repository hinzuzufügen.
 
@@ -143,8 +148,24 @@
 1. Stellt den gelöschten Branch `nacktmull` wieder her.
 1. Wechselt auf den Branch.
 1. Vertauscht die letzten beiden Commits per interaktivem Rebase.
+1. Bearbeitet den obersten Commit per `amend`.
 1. Löscht den vorletzten Commit aus dem Branch (per interaktivem Rebase).
 1. Wechselt wieder auf den `master` und löscht den `nacktmull`-Branch.
+
+## Verteiltes Arbeiten (Fortsetzung)
+1. Erzeugt im Übungsprojekt einen lokalen Branch mit eurem eigenen Namen. Legt
+   dort eine Datei an, die auch euren eigenen Namen trägt, und committet sie.
+1. Pusht den Branch auf das Remote-Repository.
+1. Erstellt einen Pull-Request, weist euch selbst als Assignee zu und die
+   Person rechts neben euch als Reviewer.
+1. Reviewt den Pull-Request der Person links neben euch, bittet um eine
+   Änderung und markiert den Review als "Änderungen benötigt".
+1. Macht auf eurem eigenen Branch die gewünschten Änderungen, amended und
+   force-pusht.
+1. Schaut euch den überarbeiteten Pull-Request an, reviewt erneut (diesmal
+   positiv) und mergt. Löscht den Remote-Branch.
+1. Pull und prunet euer lokales Repository und löscht lokal alle remote
+   gelöschten Branches.
 
 ## .gitignore
 1. Bearbeitet die .gitignore so, dass Dateien ignoriert werden, die Endung
