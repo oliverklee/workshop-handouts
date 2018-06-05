@@ -104,7 +104,7 @@ Tag remote von origin löschen: `git push origin :<tagname>`
 ## Open-Source-Arbeit mit Forks
 
 ### Mit dem Fork verbinden
-in Github auf das Original-Repository wechseln und über den Button **fork** einen eigenen Fork anlegen.
+in Github auf das Original-Repository wechseln und über den Button **Fork** einen eigenen Fork anlegen.
 
 den Fork lokal clonen: `git clone <fork-repository> (<zielverzeichnis>)`
 
