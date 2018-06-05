@@ -194,7 +194,9 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
    aus und erstellt dafür ein Ticket. Legt dafür einen Branch an und schreibt
    diesen Abschnitt in
    [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-1. Erstellt daraus einen Pull-Request.
+1. Erstellt daraus einen Pull-Request. Schreibt in die Beschreibung (nicht das
+   Subject) der Commit-Message den Text `Fixes #<Ticketnummer>`, damit das
+   Ticket beim Mergen des Pull-Requests automatisch geschlossen wird.
 1. Wartet auf Review-Feedback. Überarbeitet und rebaset euren PR nach Bedarf. 
 1. Wartet, bis Oliver euren PR gemergt hat.
 1. Bringt dann euren Fork auf den aktuellen Stand und löscht den gemergten
