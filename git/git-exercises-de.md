@@ -178,7 +178,8 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 ## Tags
 1. Klont euch das [TDD-Seed-Projekt](https://github.com/oliverklee/tdd-seed),
    schaut euch die Tags an und auf GitHub die Releases. 
-1. Erzeugt ein Tag für euren Geburtstag, z.B. `v2.4.75` für den 2.4.1975.
+1. Erzeugt im Spielwiesen-Projekt ein Tag für euren Geburtstag, z.B. `v2.4.75`
+   für den 2.4.1975.
 1. Pusht alle Tags auf remote.
 1. Schaut auf GitHub bei dem Projekt im Tab "Releases" nach.
 1. Löscht das Tag wieder lokal.
