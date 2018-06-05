@@ -199,8 +199,10 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
    Ticket beim Mergen des Pull-Requests automatisch geschlossen wird.
 1. Wartet auf Review-Feedback. Überarbeitet und rebaset euren PR nach Bedarf. 
 1. Wartet, bis Oliver euren PR gemergt hat.
-1. Bringt dann euren Fork auf den aktuellen Stand und löscht den gemergten
-   Branch.
+1. Geht auf GitHub auf den geschlossenen PR und löscht darüber den
+   Remote-Branch.
+1. Bringt dann euren Fork auf den aktuellen Stand und löscht lokal den gemergten
+   Branch (nachdem ihr `git remote prune origin` gemacht habt).
 
 ## Bonusaufgaben
 Falls ihr die Basics noch einmal wiederholen möchtet:
