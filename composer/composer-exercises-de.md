@@ -1,6 +1,6 @@
 # Übungen zu Composer
 
-# Installation
+## Installation
 1. Prüft, dass PHP lokal installiert ist und im Pfad liegt, und welche Version
    installiert ist.
 1. Installiert euch [Composer](https://getcomposer.org/) so, dass er als
@@ -11,14 +11,42 @@
 1. Lasst euch die Composer-Hilfe zu `selfupdate` anzeigen.
 1. Lasst ein Composer-Update laufen.
 
-# Grundlagen
-1. Erzeugt interaktiv ein neues Composer-Stand-Alone-Projekt. Überlegt euch
-   dafür einen Vendor-Namen (entweder für eure Firma oder euch als Person).
-   Nehmt `workshop` als Produktnamen. An dieser Steller braucht das Projekt
-   noch keine Abhängkeiten zu haben.
+## Grundlagen
+1. Erzeugt interaktiv ein neues Composer-Stand-Alone-Projekt.
+   - Überlegt euch dafür einen Vendor-Namen (entweder für eure Firma oder euch
+     als Person).
+   - Nehmt `workshop` als Produktnamen.
+   - Nehmt `GPL-3.0+` als Lizenz.
+   - An dieser Steller braucht das Projekt noch keine Abhängkeiten zu haben.
 1. Schaut euch die generierte `composer.json` an.
 1. Geht in das erzeugte Verzeichnis und installiert die Abhängigkeiten.
 1. Schaut euch die generierte `composer.lock` an und schaut euch im Verzeichnis
    `vendor/` um.
 1. Legt eine Datei `bin/start.php` an, die "Hello world!" ausgibt.
-1. Bindet in der Datei den Composer-Autoload ein und führt die Datei aus.
+1. Bindet in der Datei den Composer-Autoloader ein und führt die Datei aus.
+
+## Abhängigkeiten
+1. Fügt das Paket `phpunit/php-timer` als Abhängigkeit hinzu.
+1. Bindet die Timer-Klasse in die `start.php` ein und lasst die Zeit
+   von `sleep(1);` stoppen und ausgeben.
+1. Schaut euch die composer.json von `phpunit/php-timer` an, findet die
+   Dev-Abhängigkeiten heraus und schaut nach, ob diese installiert sind.
+1. Installiert `squizlabs/php_codesniffer` als Dev-Abhängigkeit, lest euch die
+   Anleitung durch und prüft die PHP-Datei in `bin/` darauf, dass sie dem
+   PSR-2-Coding-Standard entspricht (und behebt etwaige Probleme).
+1. Lest euch die
+   [Dokumentation von Requirement-Constraints](https://getcomposer.org/doc/articles/versions.md)
+   durch.
+1. Tragt ein, dass euer Projekt mindestens PHP 7.0 und maximal PHP 7.2.x hat.
+1. Ändert die Dev-Abhängigkeit von `squizlabs/php_codesniffer` so, dass alle
+   non-breaking Updates ab Version 3.0.0 erlaubt sind.
+1. Aktualisiert die Abhängigkeiten und schaut, welche Version von
+   `squizlabs/php_codesniffer` installiert ist.
+1. Aktualisiert mit `composer update` die Abhängigkeiten so, dass die
+   ältestmöglichen Versionen installiert werden und schaut, welche Version von
+   `squizlabs/php_codesniffer` installiert ist. Testet außerdem, dass der
+   Codesniffer weiterhin funktioniert.
+1. Ändert die Dev-Abhängigkeit von `squizlabs/php_codesniffer` so, dass nur
+   Bugfix-Updates zu Version 3.0.0 erlaubt sind.
+1. Aktualisiert die Abhängigkeiten und schaut, welche Version von
+   `squizlabs/php_codesniffer` installiert ist.
