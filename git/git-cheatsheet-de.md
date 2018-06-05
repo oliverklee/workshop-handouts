@@ -33,6 +33,12 @@ git config --global core.eol lf
 
 ## Branches
 
+Zeigt Branches an: `git branch`
+
+Löscht Branches: `git branch -d <branchname>`
+
+Löscht Branches (force) `git branch -D <branchname>`
+
 ## Rebase und Konflikte
 
 ## .gitignore
