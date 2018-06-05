@@ -41,6 +41,24 @@ Löscht Branches (force) `git branch -D <branchname>`
 
 ## Rebase und Konflikte
 
+### Interaktive Rebase
+
+Rebase ausführen: `git rebase -i HEAD~<Anzahl der Schritte>`
+
+```
+Commands in File-Edit Mode:
+
+p, pick = Commit verwenden
+r, reword = Commit verwenden und Commit Log ändern
+e, edit = Commit verwenden und den Commit selbst ändern Log und Inhalt
+s, squash = Commit verwenden und mit dem vorhergehende Commit verschmelzen
+f, fixup = wie "squash" und Log verwerfen
+x, exec = shell commando ausführen - restliche zeile nach x, exec
+d, drop = Commit löschen
+```
+
+Datei speichern und schließen
+
 ## .gitignore
 Verzeichnis `.idea/` im Hauptverzeichnis ignorieren: `/.idea/`
 
