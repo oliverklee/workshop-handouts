@@ -33,11 +33,13 @@ git config --global core.eol lf
 
 ## Branches
 
-Zeigt Branches an: `git branch`
+Alle lokalen Branches anzeigen: `git branch`
 
-Löscht Branches: `git branch -d <branchname>`
+Einen Branch löschen, der keine ungemergten Änderungen hat:
+`git branch -d <branchname>`
 
-Löscht Branches (force) `git branch -D <branchname>`
+Einen Branch löschen (auch mit ungemergten Änderungen):
+`git branch -D <branchname>`
 
 ## Rebase und Konflikte
 
