@@ -35,9 +35,29 @@ git config --global core.eol lf
 
 ## Rebase und Konflikte
 
-## Verteiltes Arbeiten
-
 ## .gitignore
+Verzeichnis `.idea/` im Hauptverzeichnis ignorieren: `/.idea/`
+
+Alle `*.backup`-Dateien in allen Verzeichnissen ignorieren: `*.backup`
+
+Alle Dateien in `/var/log/` ignorieren bis auf die Datei `.gitkeep` dort (damit
+das Verzeichnis trotzdem im Git-Repository vorhanden ist):
+```
+/var/log/*
+!/var/log/.gitkeep
+```
+
+Alles in `/private/` und `/private/typo3conf/` ignorieren, aber das
+Verzeichnis `/private/typo3conf/l10n` nicht ignorieren (das von TYPO3
+automatisch erzeugt wird, sodass wir da keine `.gitignore` benötigen):
+```
+/private/*
+!/private/typo3conf
+/private/typo3conf/*
+!/private/typo3conf/l10n
+```
+
+## Verteiltes Arbeiten
 
 ## Arbeiten mit GitHub im selben Projekt
 
@@ -59,7 +79,7 @@ Tag remote von origin löschen: `git push origin :<tagname>`
 
 Das Original eines Forks als `upstream`-Remote lokal hinzufügen:
 
-```bash
+```
 git remote add upstream <Repository-URL>
 ```
 
