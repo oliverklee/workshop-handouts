@@ -3,8 +3,10 @@
 ## Installation
 1. Prüft, dass PHP lokal installiert ist und im Pfad liegt, und welche Version
    installiert ist.
-1. Installiert euch [Composer](https://getcomposer.org/) so, dass er als
-   `composer` (nicht: `composer.phar`) bei euch im Pfad liegt.
+1. Geht auf https://getcomposer.org/und schaut, was beim Neuladen der Seite
+   passiert.
+1. Installiert euch Composer so, dass er als `composer`
+   (nicht: `composer.phar`) bei euch im Pfad liegt.
 1. Lasst euch anzeigen, welche Version von Composer ihr installiert habt.
 1. Lasst euch die generelle Composer-Hilfe anzeigen.
 1. Lasst euch die Liste aller Composer-Befehle anzeigen.
@@ -24,6 +26,17 @@
    `vendor/` um.
 1. Legt eine Datei `bin/start.php` an, die "Hello world!" ausgibt.
 1. Bindet in der Datei den Composer-Autoloader ein und führt die Datei aus.
+
+## Packagist
+1. Geht auf https://packagist.org/ und schaut, welche Pakete besonders beliebt
+   sind.
+1. Schaut euch die Abhängigkeiten und die Beschreibung von `pelago/emogrifier`
+   2.0.0 an und versteht diese.
+1. Schaut euch die Abhängigkeiten und die Beschreibung von `symfony/symfony`
+   4.1.0 an und versteht diese.
+1. Findet heraus, welche Pakete es noch vom Vendor von `symfony/symfony` gibt.
+1. Findet heraus, wer der der Maintainer von `phpunit/phpunit` ist und von
+   welchen Paketen er der Maintainer ist.
 
 ## Abhängigkeiten
 1. Fügt das Paket `phpunit/php-timer` als Abhängigkeit hinzu.
