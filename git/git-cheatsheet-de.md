@@ -119,17 +119,39 @@ Tag remote von origin löschen: `git push origin :<tagname>`
 
 ## Open-Source-Arbeit mit Forks
 
-Das Original eines Forks als `upstream`-Remote lokal hinzufügen:
+### Mit dem Fork verbinden
+in Github auf das Original-Repository wechseln und über den Button **Fork** einen eigenen Fork anlegen.
 
-```
-git remote add upstream <Repository-URL>
-```
+den Fork lokal clonen: `git clone <fork-repository> (<zielverzeichnis>)`
 
-Den lokalen Master mit Upstream synchronisieren und auf euren Fork pushen:
+in das Zielverzeichnis wechseln: `cd <zielverzeichnis>`
 
-```bash
-git checkout master
-git fetch upstream
-git rebase upstream/master
-git push
-```
+mit dem Original-Repository verknüpfen: `git remote add upstream <Repository-URL>`
+
+### Den lokalen Master mit Upstream synchronisieren und auf euren Fork pushen
+zum Master wechseln: `git checkout master`
+
+den Fork mit dem Original abgleichen: `git fetch upstream`
+
+den lokalen Master abgleichen: `git rebase upstream/master`
+
+### Einen Pull-Request bearbeiten
+die Änderungen im bestehenden Commit veröffentlichen: `git commit --amend`
+
+die Änderungen auf den Fork verschieben (force): `git push -f`
+
+**Wichtig**
+in der Beschreibung `Fixes #<Ticketnummer>` angeben, damit beim Merge das Ticket automatisch geschlossen werden kann. Üblicherweise steht die Zeile am Ende der Beschreibung.
+
+### Nach dem geschlossenen Pull-Request das eigene Fork wieder updaten
+online in der Maske den Remote-Branch löschen
+1. zum geschlossenen Pull-Request wechseln
+1. den Branch löschen
+
+zum Master wechseln: `git checkout master`
+
+prüfen, ob der Remote-Branch noch existiert: `git remote prune origin`
+
+den lokalen Branch löschen `git branch -D <Branch Name>`
+
+den lokalen Master mit Upstream synchronisieren und auf euren Fork pushen
