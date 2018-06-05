@@ -1,6 +1,7 @@
 # Git-Cheatsheet
 
 ## Git-Installation
+_to do_
 
 ## Bash/Linux-Kommandozeile
 
@@ -41,11 +42,14 @@ git config --global core.eol lf
 ```
 
 ## Lokales Arbeiten
+_to do_
 
 ## Schadensbegrenzung
 ### Teil 1
+_to do_
 
 ### Teil 2
+_to do_
 
 ## Branches
 
@@ -58,6 +62,7 @@ einen Branch löschen (auch mit ungemergten Änderungen):
 `git branch -D <branchname>`
 
 ## Rebase und Konflikte
+_to do_
 
 ### Interaktiver Rebase
 
@@ -100,8 +105,10 @@ automatisch erzeugt wird, sodass wir da keine `.gitignore` benötigen):
 ```
 
 ## Verteiltes Arbeiten
+_to do_
 
 ## Arbeiten mit GitHub im selben Projekt
+_to do_
 
 ## Tags
 
