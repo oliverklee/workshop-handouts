@@ -191,7 +191,7 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Klont euch euren Fork auf lokal.
 1. Legt euch lokal ein `upstream`-Remote an.
 1. Sucht euch einen bisher leeren Abschnitt im [Git-Cheatsheet](git-cheatsheet-de.md)
-   aus und erstellt dafür ein Ticket. Legt dafür einen branch an und schreibt
+   aus und erstellt dafür ein Ticket. Legt dafür einen Branch an und schreibt
    diesen Abschnitt in
    [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 1. Erstellt daraus einen Pull-Request.
