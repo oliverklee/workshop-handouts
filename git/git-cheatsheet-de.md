@@ -33,17 +33,17 @@ git config --global core.eol lf
 
 ## Branches
 
-Alle lokalen Branches anzeigen: `git branch`
+alle lokalen Branches anzeigen: `git branch`
 
-Einen Branch löschen, der keine ungemergten Änderungen hat:
+einen Branch löschen, der keine ungemergten Änderungen hat:
 `git branch -d <branchname>`
 
-Einen Branch löschen (auch mit ungemergten Änderungen):
+einen Branch löschen (auch mit ungemergten Änderungen):
 `git branch -D <branchname>`
 
 ## Rebase und Konflikte
 
-### Interaktive Rebase
+### Interaktiver Rebase
 
 Rebase ausführen: `git rebase -i HEAD~<Anzahl der Schritte>`
 
@@ -64,7 +64,7 @@ Datei speichern und schließen
 ## .gitignore
 Verzeichnis `.idea/` im Hauptverzeichnis ignorieren: `/.idea/`
 
-Alle `*.backup`-Dateien in allen Verzeichnissen ignorieren: `*.backup`
+alle `*.backup`-Dateien in allen Verzeichnissen ignorieren: `*.backup`
 
 Alle Dateien in `/var/log/` ignorieren bis auf die Datei `.gitkeep` dort (damit
 das Verzeichnis trotzdem im Git-Repository vorhanden ist):
@@ -89,7 +89,7 @@ automatisch erzeugt wird, sodass wir da keine `.gitignore` benötigen):
 
 ## Tags
 
-Tags anzeigen: `git tag`
+alle lokalen Tags anzeigen: `git tag`
 
 annotierten Tag erzeugen: `git tag -a <tagname> -m "<Commit message>"`
 
