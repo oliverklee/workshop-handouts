@@ -4,6 +4,22 @@
 
 ## Bash/Linux-Kommandozeile
 
+Zeige Verzeichnisinhalt: `ls` 
+
+In Verzeichnis \<dir\> wechseln: `cd <dir>`
+ 
+Zum letzten Verzeichnis wechseln: `cd - `
+
+Pfad des aktuellen Verzeichnis anzeigen: `pwd`
+
+Verzeichnis erstellen: `mkdir <dir>`
+
+Datei löschen: `rm <file>`
+
+Datei verschieben oder umbenennen: `mv <file1> <file2>`
+
+Datei anlegen oder Dateizeit auf aktuelle Zeit setzen: `touch <file>`
+
 ## Git-Konfiguration
 Denkt daran, die Platzhalter durch euren echten vollen Namen und eure
 Mailadresse zu ersetzen.
