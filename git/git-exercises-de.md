@@ -183,7 +183,6 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Pusht alle Tags auf remote.
 1. Schaut auf GitHub bei dem Projekt im Tab "Releases" nach.
 1. Löscht das Tag wieder lokal.
-1. Versucht, den Tag lokal wieder mit `git checkout <tagname>` auszuchec
 1. Löscht das Tag wieder von origin.
 
 ## Open-Source-Arbeit mit Forks
