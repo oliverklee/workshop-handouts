@@ -15,7 +15,7 @@ Zusätzlich liegt hier noch:
 
 ## Über mich (Oliver Klee)
 
-Ich bin der Autor des [Spielereaders](https://spielereader.org/),
+Ich bin der Autor des [Spielereaders](https://www.spielereader.org/).
 
 Außerdem bin ich der Maintainer der
 [PHPUnit-TYPO3-Extension](https://extensions.typo3.org/extension/phpunit/),
