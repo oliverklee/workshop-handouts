@@ -116,3 +116,42 @@
 1. Findet heraus, warum das Paket `doctrine/inflector` installiert ist (mit
    der kompletten Abhängigkeitskette).
 1. Überprüft, ob die `composer.json` valide ist.
+
+## Composer und Git
+1. Schaut euch die .gitgnore der beiden Projekte an, die ihr mit
+   `composer create-project` erzeugt habt, und versteht, warum welche Sachen
+   ignoriert bzw. nicht ignoriert werden.
+
+## Weitere Repositories
+1. Legt in eurem Übungsproject ein Verzeichnis `packages/greeter` an und legt
+   in diesem Verzeichnis ein Composer-Paket an. Verschiebt die Greeter-Klasse
+   dorthin, bindet das Verzeichnis `packages` als
+   [Composer-Repository](https://getcomposer.org/doc/05-repositories.md) ein
+   und requiret das neue Paket über die `composer.json`. Testet, dass alles
+   noch funktioniert.
+1. Tragt das GitHub-Repository von `phpunit/php-timer` als VCS-Repository in
+   die `composer.json` ein und installiert das Paket `phpunit/php-timer`
+   darüber.
+
+## Composer-Scripts
+1. Führt in dem phpList-Distribution-Projekt das Composer-Skript
+   `list-modules` aus.
+1. Schaut euch die [Composer-Skripte von Emogrifier
+   ](https://github.com/MyIntervals/emogrifier/blob/master/composer.json)
+   an.
+1. Installiert in eurem Projekt, über das ihr `php-cs-fixer` habt laufen
+   lassen, die folgenden Pakete als Dev-Abhängigkeiten:
+   - PHP_CodeSniffer
+   - PHPMD
+   - PHPStan
+1. Richtet euch Composer-Scripte mit diesen Namen ein, die euren Code checken:
+   - `ci:static:lint` (ruft `php -l` auf eurem Sourcecode auf)
+   - `ci:static:sniff`
+   - `ci:static:phpmd`
+   - `ci:static:phpstan`
+1. Richtet euch ein Composer-Script `ci:static` ein, das die anderen drei
+   Scripts nacheinander aufruft.
+1. Schaut euch in dem phpList-Distribution-Projekt das Composer-Script
+   `list-modules` sowie die entsprechende PHP-Klasse an.
+1. Schreibt euch in eurem Übungsprojekt ein Composer-Script, das `php_uname`
+   per `echo` ausgibt.
