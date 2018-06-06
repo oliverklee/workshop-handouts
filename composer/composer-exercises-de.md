@@ -87,6 +87,10 @@
    diese Methode dann in der `start.php` und alles.
 1. Verschafft euch einen Überblick, welche [PSR-Standards](https://www.php-fig.org/psr/)
    es gibt und was die einzelnen Standards grob abdecken.
+1. Lest euch die folgenden Standards durch:
+   - PSR-4
+   - PSR-1
+   - PSR-2
 
 ## Weitere Befehle
 1. Erzeugt ein neues Projekt aus `phplist/base-distribution`.
