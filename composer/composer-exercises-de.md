@@ -91,13 +91,23 @@
    - PSR-4
    - PSR-1
    - PSR-2
+   - PSR-12
+
+## Globale Installation
+1. Findet heraus, wie ihre Composer-Pakete global installiert.
+1. Installiert das Paket `friendsofphp/php-cs-fixer` global.
+1. Kopiert euch bestehendes Projekt lokal auf die Platte.
+1. Erzeugt darin ein neues lokales-Git-Repository und committet alle Dateien.
+1. Lasst `php-cs-fixer` mit dem PSR-2-Standard auf euer Projekt laufen und
+   lasst euch mit `git diff` sowie `git diff -w` die Änderungen anzeigen.
 
 ## Weitere Befehle
-1. Erzeugt ein neues Projekt aus `phplist/base-distribution`.
+1. Erzeugt ein neues Projekt aus `phplist/base-distribution` und schaut an, was
+   dabei herauskommt.
 1. Erzeugt ein neues Projekt aus `helhum/typo3-distribution` und erzeugt dabei
    auch eine Seitenstruktur. (Ihr benötigt dafür eine MySQL-Datenbank.)
    Startet den PHP-Server und loggt euch ins TYPO3-Backend ein.
 1. Aktualisiert die Pakete rekursiv mit allen Abhängigkeiten.
 1. Findet heraus, warum das Paket `doctrine/inflector` installiert ist (mit
    der kompletten Abhängigkeitskette).
-1. Überprüft, dass die `composer.json` valide ist.
+1. Überprüft, ob die `composer.json` valide ist.
