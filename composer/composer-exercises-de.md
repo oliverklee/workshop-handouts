@@ -3,7 +3,7 @@
 ## Installation
 1. Prüft, dass PHP lokal installiert ist und im Pfad liegt, und welche Version
    installiert ist.
-1. Geht auf https://getcomposer.org/und schaut, was beim Neuladen der Seite
+1. Geht auf https://getcomposer.org/ und schaut, was beim Neuladen der Seite
    passiert.
 1. Installiert euch Composer so, dass er als `composer`
    (nicht: `composer.phar`) bei euch im Pfad liegt.
