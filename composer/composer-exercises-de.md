@@ -73,7 +73,7 @@
    Bugfix-Updates zu Version 3.0.0 erlaubt sind.
 1. Aktualisiert die Abhängigkeiten und schaut, welche Version von
    `squizlabs/php_codesniffer` installiert ist.
-1. Schaut euch die Abhängigkeiten von `phplist/core`,
+1. Schaut euch auf Packagist die Abhängigkeiten von `phplist/core`,
    `phplist/base-distribution`, `phplist/rest-api` und `phplist/web-frontend`
    untereinander an und versucht, diese Struktur zu verstehen.
 
