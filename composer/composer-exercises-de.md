@@ -31,13 +31,13 @@
 1. Schaut euch die Abhängigkeiten und die Beschreibung von `pelago/emogrifier`
    2.0.0 an und versteht diese.
 1. Findet heraus, welche Pakete mit mehr als 10.000 Downloads von
-   `pelago/emogrifier` abhängen.  
+   `pelago/emogrifier` abhängen.
 1. Schaut euch die Abhängigkeiten und die Beschreibung von `symfony/symfony`
    4.1.0 an und versteht diese.
 1. Findet heraus, welche Pakete es noch vom Vendor von `symfony/symfony` gibt.
 1. Findet heraus, wer der der Maintainer von `phpunit/phpunit` ist und von
    welchen Paketen er der Maintainer ist.
-1. Findet heraus, welche Pakete der User "oliverklee" maintaint. 
+1. Findet heraus, welche Pakete der User "oliverklee" maintaint.
 
 ## Abhängigkeiten
 1. Fügt das Paket `phpunit/php-timer` als Abhängigkeit hinzu.
@@ -69,7 +69,7 @@
    `squizlabs/php_codesniffer` installiert ist.
 1. Schaut euch die Abhängigkeiten von `phplist/core`,
    `phplist/base-distribution`, `phplist/rest-api` und `phplist/web-frontend`
-   untereinander an und versucht, diese Struktur zu verstehen. 
+   untereinander an und versucht, diese Struktur zu verstehen.
 
 ## Autoloading und Verzeichnisstruktur
 1. Schaut euch die empfohlene
