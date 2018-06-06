@@ -100,6 +100,11 @@
 1. Erzeugt darin ein neues lokales-Git-Repository und committet alle Dateien.
 1. Lasst `php-cs-fixer` mit dem PSR-2-Standard auf euer Projekt laufen und
    lasst euch mit `git diff` sowie `git diff -w` die Änderungen anzeigen.
+1. Installiert euch global das Paket `phpstan/phpstan`.
+1. Fügt für eurer Projekt eine `composer.json` hinzu und tragt dort [Autoloading
+   per Classmap](https://getcomposer.org/doc/04-schema.md#classmap) ein.
+1. Schaut euch die [Dokumentation zu PhpStan](https://github.com/phpstan/phpstan)
+   an und prüft euren Code mit PhpStan mit verschiedenen Rule-Levels.
 
 ## Weitere Befehle
 1. Erzeugt ein neues Projekt aus `phplist/base-distribution` und schaut an, was
