@@ -23,8 +23,7 @@
    - Nehmt `GPL-3.0+` als Lizenz.
    - An dieser Steller braucht das Projekt noch keine Abhängkeiten zu haben.
 1. Schaut euch die generierte `composer.json` an.
-1. Schaut euch die generierte `composer.lock` an und schaut euch im Verzeichnis
-   `vendor/` um.
+1. Schaut euch im Verzeichnis `vendor/` um.
 1. Legt eine Datei `bin/start.php` an, die "Hello world!" ausgibt.
 
 ## Packagist
@@ -43,6 +42,8 @@
 
 ## Abhängigkeiten
 1. Fügt das Paket `phpunit/php-timer` als Abhängigkeit hinzu.
+1. Schaut euch die generierte `composer.lock` an und schaut euch im Verzeichnis
+   `vendor/` um.
 1. Lasst euch anzeigen, welche Pakete jetzt alle installiert sind.
 1. Bindet den Composer-Autoloader in `start.php` ein und führt die Datei erneut
    aus.
