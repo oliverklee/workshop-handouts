@@ -33,6 +33,9 @@ Dev-Abhängigkeit hinzufügen: `composer require --dev <Paketname>`
 
 Abhängigkeiten aktualisieren: `composer update`
 
+## Globale Installation
+Paket global installieren: `composer global install <Paketname>`
+
 ## Weitere Befehle
 Neues Projekt aus Paket erstellen: `composer create-project <Paketname>`
 
