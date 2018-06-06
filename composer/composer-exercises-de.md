@@ -49,8 +49,9 @@
    aus.
 1. Benutzt die Timer-Klasse in der `start.php` ein und lasst die Zeit
    von `sleep(1);` stoppen und ausgeben.
-1. Schaut euch die composer.json von `phpunit/php-timer` an, findet die
-   Dev-Abhängigkeiten heraus und schaut nach, ob diese installiert sind.
+1. Findet die Dev-Abhängigkeiten von `phpunit/php-timer` heraus (entweder
+   lokal in `vendor` oder auf Packagist) und schaut nach, ob diese installiert
+   sind.
 1. Installiert `squizlabs/php_codesniffer` als Dev-Abhängigkeit, lest euch die
    Anleitung durch und prüft die PHP-Datei in `bin/` darauf, dass sie dem
    PSR-2-Coding-Standard entspricht (und behebt etwaige Probleme).
@@ -58,7 +59,9 @@
    [Dokumentation von Requirement-Constraints](https://getcomposer.org/doc/articles/versions.md)
    durch.
 1. Tragt ein, dass euer Projekt mindestens PHP 7.0 und maximal PHP 7.2.x hat.
-1. Ändert die Dev-Abhängigkeit von `squizlabs/php_codesniffer` so, dass alle
+   Lass ein `composer update` laufen, um zu schauen, ob das Requirement
+   funktioniert.
+1. Ändert die Dev-Abhängigkeit `squizlabs/php_codesniffer` so, dass alle
    non-breaking Updates ab Version 3.0.0 erlaubt sind.
 1. Aktualisiert die Abhängigkeiten und schaut, welche Version von
    `squizlabs/php_codesniffer` installiert ist.
@@ -82,6 +85,8 @@
 1. Legt im Unter-Namespace `Service` eine Klasse `Greeter` an, die lediglich eine
    statische Methode `greet` hat, und verschiebt das Hello-World dahin. Benutzt
    diese Methode dann in der `start.php` und alles.
+1. Verschafft euch einen Überblick, welche [PSR-Standards](https://www.php-fig.org/psr/)
+   es gibt und was die einzelnen Standards grob abdecken.
 
 ## Weitere Befehle
 1. Erzeugt ein neues Projekt aus `phplist/base-distribution`.
