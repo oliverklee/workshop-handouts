@@ -1,4 +1,4 @@
-# Referenz und Beispiele zu fortgeschrittenem PHP
+# Reference and examples for advanced PHP
 
 ## Project structure
 
