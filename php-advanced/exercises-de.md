@@ -120,3 +120,22 @@ Hello, Oliver!
 1. Besprecht dieses Konzept mit mir.
 1. Setzt dieses Konzept um. Geht dabei kleine Schritte, sodass ihr sehr
    schnell immer wieder korrekt funktionierenden Code habt.
+
+## Eingebaute Klassen
+
+1. Lest euch die Doku zum `ZipArchive` durch.
+1. Packt das Wörterbuch in eine ZIP-Datei.
+1. Stellt die Funktionen, die das Wörterbuch lesen, auf das ZIP um.
+   Arbeitet zuerst mit einer Variante, die das ZIP in ein Verzeichnis entpackt,
+   und stellt dann darauf um, dass die Datei mit den Wörtern direkt aus dem
+   ZIP gelesen wird.
+1. Überlegt euch eine XML-Struktur, in der man Anagramme aus einer Wortliste
+   gut darstellen kann. Besprecht diese Struktur mit mir.
+1. Fügt dem Kommando `anagram:find-all` ein optionales Argument hinzu, mit dem
+   man angeben kann, in welche Datei das Ergebnis der Suche nach Anagrammen
+   geschrieben werden soll. Dies soll dann eine XML-Datei mit der Struktur
+   sein, die ihr vorher definiert habt.
+1. Fügt zur XML-Struktur den aktuellen Zeitstempel als ISO 8601 hinzu.
+   Arbeitet dabei mit der `DateTime`-Klasse.
+1. Schaut, ob ihr wieder etwas refactoren solltet. Falls ja, besprecht die
+   Änderungen mit mir und setzt sie um.
