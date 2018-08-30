@@ -83,3 +83,40 @@ Hello, Oliver!
    - 42
    - "42"
    - "42 cups of coffee"
+
+## OOP
+
+### Dinge bauen
+
+1. Schreibt ein Kommando `word:reverse`, das ein Argument erwartet und den
+   übergebenen String umdreht.
+   Falls das übergebene Wort mit einem Großbuchstaben anfängt, soll das
+   erzeugte Wort auch mit einem Großbuchstaben anfangen. (Mehrere Wörter sowie
+   Binnenmajuskel braucht das Kommando nicht zu berücksichtigen.)
+1. Sorgt dafür, dass die Funktion auch bei Umlauten am Wortanfang die Groß- und
+   Kleinschreibung richtig umsetzt.
+1. Schreibt ein Kommando `word:sort`, das das übergebene Wort alphabetisch
+   sortiert. Aus "hello" wird dann beispielsweise "ehllo". Groß- und
+   Kleinschreibung sollen wir bei `word:reverse` funktionieren.
+1. Schreibt ein Kommando `anagram:check`, das zwei Wörter erwartet und prüft,
+   ob die beiden Wörter Anagramme voneinander sind (unabhängig von der Groß-
+   und Kleinschreibung). "Leo" ist beispielsweise ein Anagramm von "Ole".
+1. Findet eine Liste aller Wörter eine Sprache als Textdatei im Netz
+   (de_DE, en_GB oder en_US oder auch eine andere Sprache) und legt sie im
+   Projekt ab.
+1. Schreibt ein Kommando `resources:read-words`, das alle Wörter aus der
+   Datei ausliest und auf der Konsole ausgibt.
+1. Schreibt ein Kommando `palindrome:find-all`, dass alle Palindrome in der
+   Wortliste findet und auf der Konsole ausgibt.
+1. Schreibt ein Kommando `anagram:find-all`, dass alle Anagramme in der
+   Wortliste findet und ausgibt.
+
+### Die Dinge strukturieren
+
+1. Schaut euch die Doku zu den verschiedenen OOP-Themen an.
+1. Überlegt euch auf Papier ein Konzept, wie ihr euren Code mit diesen
+   Konzepten überarbeiten könnt, damit ihr weniger Dopplung habt und der Code
+   mehr der Absicht hinter dem Code entspricht.
+1. Besprecht dieses Konzept mit mir.
+1. Setzt dieses Konzept um. Geht dabei kleine Schritte, sodass ihr sehr
+   schnell immer wieder korrekt funktionierenden Code habt.
