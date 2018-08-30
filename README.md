@@ -3,9 +3,10 @@
 Dies sind die Handouts zu vielen meiner Workshops:
 
 * [Best-Practices mit extbase/fluid](extbase-best-practices) (EN)
+* [Composer](composer) (DE)
 * [Diversity](diversity/README.md) (EN)
 * [Git](git) (DE)
-* [Composer](composer) (DE)
+* [PHP (für Leute mit einiger Erfahrung)](php-advanced) (DE)
 * [Train the Trainer](train-the-trainer) (DE)
 
 Zusätzlich liegt hier noch:
