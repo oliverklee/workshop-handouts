@@ -56,3 +56,30 @@ die unser Projekt bekommt.
 bin/console hello:greet Oliver
 Hello, Oliver!
 ```
+
+## Strikte Typisierung
+
+1. Lest euch die Doku zu strikter Typisierung durch.
+1. Lagert die beiden Begrüßungen (mit und ohne Namen) in separate Methoden aus.
+1. Versorgt die neuen Methoden mit korrekten Typ-Deklarationen (und die alten
+   auch, falls da noch etwas fehlen sollte). Falls ihr PHP >= 7.1 einsetzt,
+   benutzt Nullable-Type-Declarations und Void-Funktionen, wo es passt.
+1. Lest euch die Doku zum Strict-Mode durch und stellt alle PHP-Dateien auf
+   Strict-Mode um. Testet, dass alles noch funktioniert.
+1. Schreibt ein neues Konsolen-Kommando `php:comparisons`, das die folgenden
+   Werte mit dem nicht-strikten Vergleichsoperator `==` vergleicht und in einer
+   Tabelle die Ergebnisse "yes" bzw. "no" ausgibt.
+   - 0
+   - 0.0
+   - "0.0"
+   - 1
+   - 1.0
+   - "0"
+   - "1"
+   - "true"
+   - false
+   - true
+   - null
+   - 42
+   - "42"
+   - "42 cups of coffee"
