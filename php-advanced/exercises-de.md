@@ -139,3 +139,37 @@ Hello, Oliver!
    Arbeitet dabei mit der `DateTime`-Klasse.
 1. Schaut, ob ihr wieder etwas refactoren solltet. Falls ja, besprecht die
    Änderungen mit mir und setzt sie um.
+
+## Sauber programmieren
+
+1. Lintet den PHP-Code in `src/` und `bin`.
+1. Schreibt euch ein Composer-Script `ci:php:lint`, das in diesen beiden
+   Ordnern den PHP-Code lintet.
+1. Baut einen PHP-Syntaxfehler ein und testet, dass der Linter diesen findet.
+1. Überfliegt die Doku zu PHPDoc.
+1. Fügt PHPDoc zu eurem Code hinzu, wo die Typ-Deklarationen und die
+   Methodennamen nicht schon aussagekräftig genug sind.
+1. Lest euch PSR-1 und PSR-2 durch.
+1. Installiert in eurem Projekt per Composer (als Development-Abhängigkeit)
+   PHP_CodeSniffer.
+1. Lasst den Sniffer mit dem PSR-2-Standard auf den Ordnern `src/` und `bin`
+   laufen.
+1. Schreibt euch ein Composer-Script `ci:php:sniff`, dass die beiden Ordner
+   mit PHP_CodeSniffer snifft.
+1. Behebt alle Warnungen und Fehler, die PHP_CodeSniffer gefunden hat.
+1. Kopiert euch die PHP_CodeSniffer-Konfiguration von phpList, ergänzt das
+   Composer-Skript entsprechend und schaut, was es jetzt an neuen Warnungen
+   gibt.
+1. Installiert euch PHP-CS-Fixer (wieder als Development-Abhängigkeit) und
+   kopiert euch die PHP-CS-Fixer-Konfiguration von oelib. Schreibt euch ein
+   Composer-Skript `php:cs:fix`, das die beiden Ordner fixt.
+1. Fixt mit PHP-CS-Fixer möglichst viele Warnungen. Behebt die anderen
+   Warnungen manuell.
+1. Installiert euch PHPStan, schreibt dafür ein Composer-Skript `ci:php:stan`,
+   und arbeitet euch nach und nach durch die Levels, bis ihr alle Warnungen
+   behoben habt.
+1. Installiert euch Psalm, schreibt dafür ein Composer-Skript `ci:php:psalm`,
+   und arbeitet euch nach und nach durch die Levels, bis ihr alle Warnungen
+   behoben habt.
+1. Installiert euch PHPMD, kopiert euch die Konfiguration von phpList,
+   schreibt dafür ein Composer-Skript `ci:php:md`, und behebt alle Warnungen.

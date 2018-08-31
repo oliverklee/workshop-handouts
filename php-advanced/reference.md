@@ -58,6 +58,23 @@
 - [example](https://github.com/phpList/core/blob/master/src/Domain/Model/Identity/AdministratorToken.php)
 - [reference](http://php.net/datetime)
 
+### Clean code
+- [reference for the PHP command line (including the linter)](http://php.net/manual/en/features.commandline.options.php)
+- [example for PHPDoc](https://github.com/phpList/rest-api/blob/master/src/Controller/SubscriberController.php)
+- [reference for PHPDoc](https://manual.phpdoc.org/HTMLSmartyConverter/HandS/phpDocumentor/tutorial_phpDocumentor.howto.pkg.html)
+- [PSR-1 reference](https://www.php-fig.org/psr/psr-1/)
+- [PSR-2 reference](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
+- [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)
+- [reference for Composer scripts](https://getcomposer.org/doc/articles/scripts.md)
+- [example for Composer scripts](https://github.com/MyIntervals/emogrifier/blob/master/composer.json)
+- [example (phpList) for a PHP_CodeSniffer configuration](https://github.com/phpList/core/tree/master/config/PhpCodeSniffer)
+- [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
+- [example (oelib) for a PHP-CS-Fixer configuration](https://github.com/oliverklee/ext-oelib/blob/master/Configuration/php-cs-fixer.php)
+- [PHPStan](https://github.com/phpstan/phpstan)
+- [Psalm](https://github.com/vimeo/psalm)
+- [PHPMD](https://github.com/phpmd/phpmd)
+- [example (phpList) for a PHPMD configuration](https://github.com/phpList/core/tree/master/config/PHPMD)
+
 ### (Copy'n'paste template)
 - [example]()
 - [reference]()
