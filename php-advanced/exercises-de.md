@@ -10,6 +10,14 @@ ihr einige PHP-Funktionalitäten ausprobieren könnt.
 Das Projekt wird keine webbasierte Oberfläche haben, damit wir und bei dem
 Workshop nicht mit Web-Frameworks oder CMSen zu beschäftigen brauchen.
 
+## Infrastruktur-Checks
+
+1. Loggt euch per SSH auf euren Container ein.
+1. Prüft, welche PHP-Version installiert ist: `php --version`
+1. Prüft, welche Composer-Version installiert ist: `composer --version`
+1. Prüft, dass ihr mit eurer IDE Dateien im Container anlegen und bearbeiten
+   könnt.
+
 ## Projektstruktur
 
 1. Legt euch ein Verzeichnis `words` für das Übungsprojekt an.
