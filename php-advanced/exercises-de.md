@@ -129,6 +129,16 @@ Hello, Oliver!
 1. Setzt dieses Konzept um. Geht dabei kleine Schritte, sodass ihr sehr
    schnell immer wieder korrekt funktionierenden Code habt.
 
+Unter anderen solltet ihr dabei diese Klasse bzw. Methoden haben
+(alle innerhalb eures Project-Namespaces):
+
+- `Domain\Model\Word`
+- `Word::isAnagramOf(Word $word)`
+- `Domain\Model\WordSet implements \Iterator`
+- `File\WordListReader`
+- `WordProcessing\AnagramFinder::findAnagrams(Word[] $words): WordSet[]`
+- `WordProcessing\AnagramFinder::findPalindromes(Word[] $words): Word[]`
+
 ## Eingebaute Klassen
 
 1. Lest euch die Doku zum `ZipArchive` durch.
