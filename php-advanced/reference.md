@@ -42,6 +42,7 @@
 - [reference for abstract classes](http://php.net/manual/en/language.oop5.abstract.php)
 - [reference for interfaces](http://php.net/manual/en/language.oop5.interfaces.php)
 - [reference for traits](http://php.net/manual/en/language.oop5.traits.php)
+- [reference for the Iterator interface](http://php.net/manual/en/class.iterator.php)
 
 ## Build-in classes
 
