@@ -143,7 +143,8 @@ Unter anderen solltet ihr dabei diese Klasse bzw. Methoden haben
 (alle innerhalb eures Project-Namespaces):
 
 - `Domain\Model\Word`
-- `Word::isAnagramOf(Word $word)`
+- `Word::isPalindrome(): bool`
+- `Word::isAnagramOf(Word $word): bool`
 - `Domain\Model\WordSet implements \Iterator`
 - `File\WordListReader`
 - `WordProcessing\AnagramFinder::findAnagrams(Word[] $words): WordSet[]`
@@ -156,7 +157,7 @@ sondern nur als PHPDoc-Annotation. Die entsprechende Typ-Deklaration wäre
 ## Eingebaute Klassen
 
 1. Lest euch die Doku zum `ZipArchive` durch.
-1. Packt das Wörterbuch in eine ZIP-Datei.
+1. Packt das Wörterbuch (per Hand) in eine ZIP-Datei.
 1. Stellt die Funktionen, die das Wörterbuch lesen, auf das ZIP um.
    Arbeitet zuerst mit einer Variante, die das ZIP in ein Verzeichnis entpackt,
    und stellt dann darauf um, dass die Datei mit den Wörtern direkt aus dem
