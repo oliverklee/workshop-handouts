@@ -76,7 +76,9 @@ Hello, Oliver!
    Strict-Mode um. Testet, dass alles noch funktioniert.
 1. Schreibt ein neues Konsolen-Kommando `php:comparisons`, das die folgenden
    Werte mit dem nicht-strikten Vergleichsoperator `==` vergleicht und in einer
-   Tabelle die Ergebnisse "yes" bzw. "no" ausgibt.
+   Tabelle die Ergebnisse "yes" bzw. "no" ausgibt. Schreibt dafür auch eine
+   Methode, die einen Parameter erwartet und dafür die Ausgabe von `var_dump`
+   als String zurückgibt, indem sie die Ausgabepufferung manipuliert.
    - 0
    - 0.0
    - "0.0"

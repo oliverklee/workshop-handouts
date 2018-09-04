@@ -32,6 +32,7 @@
 - [reference for nullable types and void functions](http://php.net/manual/en/migration71.new-features.php)
 - [reference for strict mode](http://php.net/manual/de/migration70.new-features.php)
 - [reference for comparison operators](http://php.net/manual/en/language.operators.comparison.php)
+- [reference for var_dump](http://php.net/manual/function.var-dump.php)
 
 ## OOP
 - [example for method visibility](https://github.com/phpList/core/blob/master/src/Core/Bootstrap.php)
