@@ -149,6 +149,10 @@ Unter anderen solltet ihr dabei diese Klasse bzw. Methoden haben
 - `WordProcessing\AnagramFinder::findAnagrams(Word[] $words): WordSet[]`
 - `WordProcessing\AnagramFinder::findPalindromes(Word[] $words): Word[]`
 
+Hinweis: Die Notation `Word[]` funktioniert nicht als Typ-Deklaration in PHP,
+sondern nur als PHPDoc-Annotation. Die entsprechende Typ-Deklaration wäre
+`array`.
+
 ## Eingebaute Klassen
 
 1. Lest euch die Doku zum `ZipArchive` durch.
