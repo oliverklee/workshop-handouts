@@ -125,7 +125,10 @@ Hello, Oliver!
 1. Schaut euch die Doku zu den verschiedenen OOP-Themen an.
 1. Überlegt euch auf Papier ein Konzept, wie ihr euren Code mit diesen
    Konzepten überarbeiten könnt, damit ihr weniger Dopplung habt und der Code
-   mehr der Absicht hinter dem Code entspricht.
+   mehr der Absicht hinter dem Code entspricht. Unter anderem sollten die
+   Kommando-Klassen auf `Command` enden und die Struktur der Kommandos
+   widerspiegeln, also beispielsweise `Command\Hello\GreetCommand` für
+   `hello:greet`.
 1. Besprecht dieses Konzept mit mir.
 1. Setzt dieses Konzept um. Geht dabei kleine Schritte, sodass ihr sehr
    schnell immer wieder korrekt funktionierenden Code habt.

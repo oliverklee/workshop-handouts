@@ -33,7 +33,15 @@
 - [reference for strict mode](https://secure.php.net/manual/de/migration70.new-features.php)
 - [reference for comparison operators](https://secure.php.net/manual/language.operators.comparison.php)
 - [reference for var_export](https://secure.php.net/manual/function.var-export.php)
+
+### More Symfony console
+- [Blog post 1 about Symfony 4.1 console improvements](https://symfony.com/blog/new-in-symfony-4-1-console-improvements)
+- [Blog post 2 about Symfony 4.1 console improvements](https://symfony.com/blog/new-in-symfony-4-1-advanced-console-output)
+- [Links to additional console resources](https://symfony.com/doc/current/components/console.html#learn-more)
+- [reference for symfony consoles helpers](https://symfony.com/doc/current/components/console/helpers/index.html)
 - [reference for tables in the Symfony console](https://symfony.com/doc/current/components/console/helpers/table.html)
+- [reference for the progress bar symfony view helper](https://symfony.com/doc/current/components/console/helpers/progressbar.html)
+- [Slides for refactoring console applications](https://speakerdeck.com/el_stoffel/better-console-applications?slide=52)
 
 ## OOP
 - [example for method visibility](https://github.com/phpList/core/blob/master/src/Core/Bootstrap.php)
