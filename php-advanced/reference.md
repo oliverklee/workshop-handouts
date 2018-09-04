@@ -33,6 +33,7 @@
 - [reference for strict mode](https://secure.php.net/manual/de/migration70.new-features.php)
 - [reference for comparison operators](https://secure.php.net/manual/language.operators.comparison.php)
 - [reference for var_export](https://secure.php.net/manual/function.var-export.php)
+- [reference for tables in the Symfony console](https://symfony.com/doc/current/components/console/helpers/table.html)
 
 ## OOP
 - [example for method visibility](https://github.com/phpList/core/blob/master/src/Core/Bootstrap.php)
