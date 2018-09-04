@@ -91,7 +91,7 @@ Hello, Oliver!
    - null
    - 42
    - "42"
-   - "42 cups of coffee"
+   - "42 cups"
 
 ## OOP
 
