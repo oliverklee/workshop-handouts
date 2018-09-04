@@ -114,9 +114,9 @@ Hello, Oliver!
    Projekt ab.
 1. Schreibt ein Kommando `resources:read-words`, das alle Wörter aus der
    Datei ausliest und auf der Konsole ausgibt.
-1. Schreibt ein Kommando `palindrome:find-all`, dass alle Palindrome in der
+1. Schreibt ein Kommando `palindrome:find-all`, das alle Palindrome in der
    Wortliste findet und auf der Konsole ausgibt.
-1. Schreibt ein Kommando `anagram:find-all`, dass alle Anagramme in der
+1. Schreibt ein Kommando `anagram:find-all`, das alle Anagramme in der
    Wortliste findet und ausgibt.
 
 ### Die Dinge strukturieren
@@ -172,7 +172,7 @@ Unter anderen solltet ihr dabei diese Klasse bzw. Methoden haben
    PHP_CodeSniffer.
 1. Lasst den Sniffer mit dem PSR-2-Standard auf den Ordnern `src/` und `bin`
    laufen.
-1. Schreibt euch ein Composer-Script `ci:php:sniff`, dass die beiden Ordner
+1. Schreibt euch ein Composer-Script `ci:php:sniff`, das die beiden Ordner
    mit PHP_CodeSniffer snifft.
 1. Behebt alle Warnungen und Fehler, die PHP_CodeSniffer gefunden hat.
 1. Kopiert euch die PHP_CodeSniffer-Konfiguration von phpList, ergänzt das
