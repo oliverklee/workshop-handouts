@@ -97,6 +97,12 @@ Hello, Oliver!
 
 ### Dinge bauen
 
+Ihr könnt die Aufgaben in diesem Abschnitt entweder so bauen, dass sie nur mit
+ASCII-Zeichen umgehen können, oder auch so, dass sie auch UTF-8 können.
+Mit UTF-8 ist deutlich kniffliger, aber dafür könnt ihr auch mit Wörterbüchern
+arbeiten, die beispielsweise deutsch oder französisch sind, und ihr werdet
+einiges über die Arbeit mit UTF-8 in PHP lernen.
+
 1. Schreibt ein Kommando `word:reverse`, das ein Argument erwartet und den
    übergebenen String umdreht.
    Falls das übergebene Wort mit einem Großbuchstaben anfängt, soll das
