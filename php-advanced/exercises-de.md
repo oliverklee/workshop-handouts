@@ -148,11 +148,14 @@ Unter anderen solltet ihr dabei diese Klasse bzw. Methoden haben
 - `Domain\Model\WordSet implements \Iterator`
 - `File\WordListReader`
 - `WordProcessing\AnagramFinder::findAnagrams(Word[] $words): WordSet[]`
-- `WordProcessing\AnagramFinder::findPalindromes(Word[] $words): Word[]`
+- `WordProcessing\PalindromeFinder::findPalindromes(Word[] $words): Word[]`
 
-Hinweis: Die Notation `Word[]` funktioniert nicht als Typ-Deklaration in PHP,
-sondern nur als PHPDoc-Annotation. Die entsprechende Typ-Deklaration wäre
-`array`.
+Hinweis: Die Notation `KlassenName::methodenName()` hier im Pseudo-Code
+bedeutet, dass die Klasse `KlassenName` eine Method `methodenName` haben soll.
+
+Hinweis: Die Notation `Word[]` hier im Pseudo-Code funktioniert nicht als
+Typ-Deklaration in PHP, sondern nur als PHPDoc-Annotation. Die entsprechende
+Typ-Deklaration in PHP wäre `array`.
 
 ## Eingebaute Klassen
 
