@@ -206,3 +206,31 @@ sondern nur als PHPDoc-Annotation. Die entsprechende Typ-Deklaration wäre
    behoben habt.
 1. Installiert euch PHPMD, kopiert euch die Konfiguration von phpList,
    schreibt dafür ein Composer-Skript `ci:php:md`, und behebt alle Warnungen.
+1. Schreibt ein Composer-Skript `ci:static`, dass alle statischen Analysen
+   aufruft.
+
+Ab dieser Stelle gehört es zu allen folgenden Aufgaben, dass ihr euren Code
+regelmäßig mit der statischen Analyse prüft und etwaige Warnungen und Fehler
+behebt.
+
+## Fehlerbehandlung
+
+1. Geht euren Code durch und ergänzt Fehlerprüfungen an den Stellen, an denen
+   Fehler auftreten können. Werft in diesem Fall eine aussagekräftige Exception
+   mit einer Nachricht und einem Fehlercode (dem aktuellen
+   UNIX-Timestamp in Sekunden).
+   Legt für die geworfenen Exceptions auch die nötigen `@throws`-Annotationen
+   an.
+1. Testet, dass die Exceptions tatsächlich geworfen werden.
+1. Wrappt den Code in `console` in ein catch und gebt eine etwaige Exception
+   schön auf der Konsole aus.
+1. Schreibt eine eigene Exception-Klasse `ZipReaderException extends RuntimeException`
+   und benutzt diese beim Lesen der ZIP-Datei.
+1. Lest euch den PSR-3-Standard durch.
+1. Baut die Exceptions so um, dass ihr den Symfony-Console-Logger nutzt. Lasst
+   alle Probleme loggen (kleine wie große), werft aber nur dort eine Exception,
+   wo das Programm tatsächlich nicht mehr sinnvoll weitermachen kann.
+1. Tragt Monolog als Abhängigkeit ein und loggt nach innerhalb des
+   Projektverzeichnisses nach `var/log/error.log` und `var/log/debug.log`
+   (mit den entsprechenden Log-Leveln). Loggt jetzt auch die normale Benutzung.
+   Schaut euch an, was in beiden Fällen bei welchen Probleme geloggt wird.

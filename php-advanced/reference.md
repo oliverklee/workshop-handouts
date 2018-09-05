@@ -69,7 +69,7 @@
 - [example](https://github.com/phpList/core/blob/master/src/Domain/Model/Identity/AdministratorToken.php)
 - [reference](https://secure.php.net/datetime)
 
-### Clean code
+## Clean code
 - [reference for the PHP command line (including the linter)](https://secure.php.net/manual/features.commandline.options.php)
 - [example for PHPDoc](https://github.com/phpList/rest-api/blob/master/src/Controller/SubscriberController.php)
 - [reference for PHPDoc](https://manual.phpdoc.org/HTMLSmartyConverter/HandS/phpDocumentor/tutorial_phpDocumentor.howto.pkg.html)
@@ -86,6 +86,17 @@
 - [PHPMD](https://github.com/phpmd/phpmd)
 - [example (phpList) for a PHPMD configuration](https://github.com/phpList/core/tree/master/config/PHPMD)
 
-### (Copy'n'paste template)
+## Error handling and logging
+- [example for throwing exceptions](https://github.com/phpList/core/blob/master/src/Core/ApplicationKernel.php#L167)
+- [example for catching exceptions](https://github.com/phpList/core/blob/master/src/Security/Authentication.php#L67)
+- [example for custom exceptions](https://git.typo3.org/Packages/TYPO3.CMS.git/blob/HEAD:/typo3/sysext/core/Classes/Database/Schema/Exception/StatementException.php)
+- [reference for exceptions](https://secure.php.net/manual/language.exceptions.php)
+- [PhpStorm live template for the current UNIX timestamp](https://twitter.com/oliklee/status/955024213965930497)
+- [PSR-3 logging interface standard](https://www.php-fig.org/psr/psr-3/)
+- [reference for the Symfony console logger](https://symfony.com/doc/current/components/console/logger.html)
+- [Monolog](https://github.com/Seldaek/monolog)
+- [Monolog tutorial](https://stackify.com/php-monolog-tutorial/)
+
+## (Copy'n'paste template)
 - [example]()
 - [reference]()
