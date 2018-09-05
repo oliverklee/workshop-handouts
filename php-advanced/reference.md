@@ -97,6 +97,17 @@
 - [Monolog](https://github.com/Seldaek/monolog)
 - [Monolog tutorial](https://stackify.com/php-monolog-tutorial/)
 
+## Anonymous functions
+- [example for anonymous functions (lamdas)](https://github.com/oliverklee/anagram-finder/blob/master/Classes/AnagramFinder.php)
+- [example for assigning anonymous functions to variables and immediately executing them](https://github.com/georgringer/news/blob/master/ext_localconf.php)
+- [example for immediately executing anonymous functions](https://github.com/helhum/typoscript_rendering/blob/master/ext_localconf.php)
+- [example for closures](https://git.typo3.org/Packages/TYPO3.CMS.git/blob/HEAD:/typo3/sysext/frontend/Classes/Resource/FileCollector.php#l214)
+- [reference for anonymous functions](https://secure.php.net/manual/functions.anonymous.php)
+- [tutorial for anonymous functions](https://www.culttt.com/2013/03/25/what-are-php-lambdas-and-closures/)
+- [reference for array_walk](https://secure.php.net/manual/function.array-walk.php)
+- [reference for array_filter](https://secure.php.net/manual/function.array-filter.php)
+- [tutorial for immediately-invoked function expressions (IIFE) in JavaScript](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6)
+
 ## (Copy'n'paste template)
 - [example]()
 - [reference]()
