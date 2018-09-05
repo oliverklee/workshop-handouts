@@ -237,3 +237,12 @@ behebt.
    Projektverzeichnisses nach `var/log/error.log` und `var/log/debug.log`
    (mit den entsprechenden Log-Leveln). Loggt jetzt auch die normale Benutzung.
    Schaut euch an, was in beiden Fällen bei welchen Probleme geloggt wird.
+
+## Anonyme Funktionen
+
+1. Lest euch die Doku zu anonymen Funktionen durch.
+1. Baut `console` in eine anonyme Funktion um, die ihr entweder direkt ausführt
+   oder in einer lokalen Variablen speichert und diese dann ausführt.
+1. Schaut die Stellen in eurem Code durch, wo ihr über ein Array iteriert, und
+   baut diese auf `array_walk` oder `array_filter` mit Lambdas um, wo es
+   inhaltlich sinnvoll ist.
