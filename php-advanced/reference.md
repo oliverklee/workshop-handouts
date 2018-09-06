@@ -109,6 +109,12 @@
 - [reference for array_filter](https://secure.php.net/manual/function.array-filter.php)
 - [tutorial for immediately-invoked function expressions (IIFE) in JavaScript](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6)
 
+## Low-level php
+- [example for variable class names](https://github.com/phpList/core/blob/master/src/Core/ApplicationKernel.php#L142)
+- [reference for variable variables](https://secure.php.net/manual/language.variables.variable.php)
+- [example for the `__call` magic method](https://git.typo3.org/Packages/TYPO3.CMS.git/blob/HEAD:/typo3/sysext/filelist/Classes/FileFacade.php#l298)
+- [reference for magic methods](https://secure.php.net/manual/language.oop5.magic.php)
+
 ## (Copy'n'paste template)
 - [example]()
 - [reference]()
