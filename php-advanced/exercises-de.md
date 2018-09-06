@@ -246,3 +246,9 @@ behebt.
 1. Schaut die Stellen in eurem Code durch, wo ihr über ein Array iteriert, und
    baut diese auf `array_walk` oder `array_filter` mit Lambdas um, wo es
    inhaltlich sinnvoll ist.
+
+## Low-level-PHP
+
+1. Baut `console` so um, dass ihr ein Array von Klassennamen habe
+   (mit `::class`), über die ihr iteriert, um die Kommandos zu instanziieren
+   und der Applikation hinzuzufügen.
