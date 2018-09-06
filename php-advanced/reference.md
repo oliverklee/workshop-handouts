@@ -109,12 +109,18 @@
 - [reference for array_filter](https://secure.php.net/manual/function.array-filter.php)
 - [tutorial for immediately-invoked function expressions (IIFE) in JavaScript](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6)
 
-## Low-level php
+## Low-level PHP
 - [example for variable class names](https://github.com/phpList/core/blob/master/src/Core/ApplicationKernel.php#L142)
 - [reference for variable variables](https://secure.php.net/manual/language.variables.variable.php)
 - [example for the `__call` magic method](https://git.typo3.org/Packages/TYPO3.CMS.git/blob/HEAD:/typo3/sysext/filelist/Classes/FileFacade.php#l298)
 - [reference for magic methods](https://secure.php.net/manual/language.oop5.magic.php)
 
-## (Copy'n'paste template)
-- [example]()
-- [reference]()
+## Built-in functions
+- [example for regular expression matching](https://github.com/oliverklee/ext-oelib/blob/master/Classes/AbstractMailer.php#L132)
+- [example for regular expression replacing](https://github.com/oliverklee/ext-oelib/blob/master/Classes/DataMapper.php#L1010)
+- [reference for regular expression functions](https://secure.php.net/manual/ref.pcre.php)
+- [example for using a stream handler](https://github.com/Nimut/testing-framework#database-fixtures)
+- [example for defining a stream handler](https://github.com/Nimut/testing-framework/blob/master/src/TestingFramework/File/NtfStreamWrapper.php)
+- [reference for streams](https://secure.php.net/manual/book.stream.php)
+- [example for reading CSV files](https://github.com/oliverklee/ext-csv_to_openimmo/blob/master/Classes/Service/CsvReader.php#L139)
+- [reference for reading CSV files](https://secure.php.net/manual/function.fgetcsv.php)
