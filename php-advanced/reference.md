@@ -53,7 +53,8 @@
 - [reference for interfaces](https://secure.php.net/manual/language.oop5.interfaces.php)
 - [reference for traits](https://secure.php.net/manual/language.oop5.traits.php)
 - [reference for the Iterator interface](https://secure.php.net/manual/class.iterator.php)
-- [post explaining why there should be no "Interface" suffix](http://verraes.net/2013/09/sensible-interfaces/)
+- [post explaining why there should be no "Interface" suffix](https://www.alainschlesser.com/interface-naming-conventions/)
+- [another post explaining why there should be no "Interface" suffix](http://verraes.net/2013/09/sensible-interfaces/)
 
 ## Build-in classes
 
