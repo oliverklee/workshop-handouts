@@ -207,12 +207,12 @@ Best (for good performance):
 protected $pageRepository = null;
 
 /**
-  * @param PagesRepository $repository
+  * @param PageRepository $repository
   *
   * @return void
   */
-public function injectPagesRepository(PagesRepository $repository)
+public function injectPageRepository(PageRepository $repository)
 {
-  $this->pagesRepository = $repository;
+  $this->pageRepository = $repository;
 }
 \end{phpcode}
