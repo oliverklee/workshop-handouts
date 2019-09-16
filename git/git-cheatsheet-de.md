@@ -25,21 +25,34 @@ Datei anlegen oder Dateizeit auf aktuelle Zeit setzen: `touch <file>`
 Denkt daran, die Platzhalter durch euren echten vollen Namen und eure
 Mailadresse zu ersetzen.
 
+### Persönliche Daten
+
 ```bash
 git config --global user.name "Jane Doe"
 git config --global user.email "jane.doe@example.com"
-git config --global color.ui auto
-git config --global branch.autosetupmerge always
-git config --global rerere.enabled true
-git config --global pull.rebase true
-git config --global push.default simple
-git config --global core.precomposeunicode true
-git config --global core.quotepath false
-git config --global branch.autosetuprebase always
-git config --global rebase.autostash true
+```
+
+### Sachen zum Copy'n'Pasten
+
+```bash
 git config --global core.autocrlf false
 git config --global core.eol lf
+git config --global branch.autosetupmerge always
+git config --global branch.autosetuprebase always
+git config --global color.ui auto
+git config --global core.precomposeunicode true
+git config --global core.quotepath false
+git config --global pull.rebase true
+git config --global push.default simple
+git config --global rebase.autostash true
+git config --global rerere.enabled true
 ```
+
+`Core.eol=lf` sorgt dafür, dass GIT den Unix-Linefeed als Default-Zeilenumbruch
+kennt und verwendet.
+
+Wichtig: Solltet Ihr nachträglich Einstellungen für `autocrlf` oder `core.eol`
+ändern, muss das lokale repository neu ausgecheckt werden.
 
 ## Lokales Arbeiten
 _to do_
