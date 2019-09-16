@@ -205,9 +205,6 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
    Branch (nachdem ihr `git remote prune origin` gemacht habt).
 
 ## Bonusaufgaben
-Falls ihr die Basics noch einmal wiederholen möchtet:
-Spielt [Try Git](https://try.github.io/).
-
 Falls ihr Lust auf Knobelaufgaben habt:
 1. Spielt [The Git Game](https://github.com/git-game/git-game).
 1. Spielt [The Git Game 2](https://github.com/git-game/git-game-v2).
