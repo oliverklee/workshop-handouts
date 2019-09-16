@@ -41,11 +41,6 @@
 #### Codecademy
 - [Codecademy course](https://www.codecademy.com/learn/learn-git) (first level free, the rest is paid)
 
-#### CodeSchool
-- [Try Git](https://try.github.io/) (free)
-- [Git Real](https://www.codeschool.com/courses/git-real) (paid)
-- [Git Real 2](https://www.codeschool.com/courses/git-real-2) (paid)
-
 #### Git Branching
 - [Learn Git Branching](https://learngitbranching.js.org/)
 
