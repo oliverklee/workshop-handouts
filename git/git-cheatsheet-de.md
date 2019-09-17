@@ -1,7 +1,16 @@
 # Git-Cheatsheet
 
 ## Git-Installation
-_to do_
+
+### Mac git-Installation
+Wer homebrew benutzt:
+
+```bash
+brew install git
+```
+
+Ansonsten kann ein inoffizeller Mac Installer benutzt werden:
+http://sourceforge.net/projects/git-osx-installer/
 
 ## Bash/Linux-Kommandozeile
 
