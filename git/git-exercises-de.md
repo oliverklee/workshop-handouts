@@ -164,24 +164,31 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Erzeugt im Übungsprojekt einen lokalen Branch mit eurem eigenen Namen. Legt
    dort eine Datei an, die auch euren eigenen Namen trägt, und committet sie.
 1. Pusht den Branch auf das Remote-Repository.
-1. Erstellt einen Pull-Request, weist euch selbst als Assignee zu und die
-   Person rechts neben euch als Reviewer.
+1. Erstellt einen Pull-Request als "work in progress", und weist euch selbst
+   als Assignee zu.
+1. Amended lokal den Commit auf diesem Branch und force-pusht.
+1. Markiert den Pull-Request als nicht mehr "work in progress" und setzt die
+   Person rechts neben euch als Reviewer. (Oliver reviewt dabei nicht mit.)
 1. Reviewt den Pull-Request der Person links neben euch, bittet um eine
    Änderung und markiert den Review als "Änderungen benötigt".
-1. Macht auf eurem eigenen Branch die gewünschten Änderungen, amended und
-   force-pusht.
-1. Schaut euch den überarbeiteten Pull-Request an, reviewt erneut (diesmal
-   positiv) und mergt. Löscht den Remote-Branch.
+1. Macht auf eurem eigenen Branch die gewünschten Änderungen, legt diese in
+   einem neuen Commit ab und pusht euren Branch.
+1. Schaut (als Reviewer) euch den überarbeiteten Pull-Request an, reviewt erneut
+   (diesmal positiv) und mergt inklusive Squash. Sorgt dabei dafür, dass die neue
+   Commit-Message gut aussieht. Löscht den Remote-Branch.
 1. Pull und prunet euer lokales Repository und löscht lokal alle remote
    gelöschten Branches.
 
 ## Tags
-1. Klont euch das [TDD-Seed-Projekt](https://github.com/oliverklee/tdd-seed),
-   schaut euch die Tags an und auf GitHub die Releases. 
-1. Erzeugt im Spielwiesen-Projekt ein Tag für euren Geburtstag, z.B. `v2.4.75`
-   für den 2.4.1975.
+1. Lasst euch im Spielwiesen-Projekt lokal alle Tags anzeigen.
+1. Erzeugt im Spielwiesen-Projekt ein annotiertes Tag für euren Geburtstag,
+   z.B. `v2.4.75` für den 2.4.1975.
 1. Pusht alle Tags auf remote.
-1. Schaut auf GitHub bei dem Projekt im Tab "Releases" nach.
+1. Überprüft auf GitHub, dass euer Tag angekommen ist.
+1. Erzeugt auf GitHub aus dem Tag einen Release.
+1. Legt noch ein zweites Tag an, das wie euer erstes Tag heißt, aber mit "x",
+   also zum Beispiel: `x2.4.75`
+1. Pusht das Tag nach origin.
 1. Löscht das Tag wieder lokal.
 1. Löscht das Tag wieder von origin.
 
