@@ -193,13 +193,17 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Löscht das Tag wieder von origin.
 
 ## Open-Source-Arbeit mit Forks
+
+Wichtig in diesem Abschnitt: Bitte erstellt hier sinnvolle Änderungen, die
+das Git-Cheatsheet verbessern, und keine unsinnigen Test-Änderungen.
+
 1. Forkt das
    [Workshop-Handouts-Repository](https://github.com/oliverklee/workshop-handouts/).
 1. Klont euch euren Fork auf lokal.
 1. Legt euch lokal ein `upstream`-Remote an.
-1. Sucht euch einen bisher leeren Abschnitt im [Git-Cheatsheet](git-cheatsheet-de.md)
-   aus und erstellt dafür ein Ticket. Legt dafür einen Branch an und schreibt
-   diesen Abschnitt in
+1. Sucht euch einen Abschnitt im [Git-Cheatsheet](git-cheatsheet-de.md) heraus,
+   den ihr verbessern möchtet, und erstellt dafür ein Ticket.
+   Legt dafür einen Branch an und schreibt diesen Abschnitt in
    [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 1. Erstellt daraus einen Pull-Request. Schreibt in die Beschreibung (nicht das
    Subject) der Commit-Message den Text `Fixes #<Ticketnummer>`, damit das
