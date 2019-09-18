@@ -64,7 +64,7 @@ Wichtig: Solltet Ihr nachträglich Einstellungen für `autocrlf` oder `core.eol`
 ändern, muss das lokale repository neu ausgecheckt werden.
 
 ## Lokales Arbeiten
-_to do_
+Lokal zu arbeiten beeinflusst andere nicht!
 
 ## Schadensbegrenzung
 ### Teil 1
