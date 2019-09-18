@@ -184,6 +184,3 @@ prüfen, ob der Remote-Branch noch existiert: `git remote prune origin`
 den lokalen Branch löschen `git branch -D <Branch Name>`
 
 den lokalen Master mit Upstream synchronisieren und auf euren Fork pushen
-
-## whatever
-irgendein inhalt
