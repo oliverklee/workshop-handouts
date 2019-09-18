@@ -142,6 +142,8 @@ GPG-signierten Tag erzeugen: `git tag -s <tagname> -m "<Commit message>"`
 
 alle Tags auf remote pushen: `git push --tags`
 
+Commits und anschließend Tags pushen: `git push --follow-tags`
+
 Tag lokal löschen: `git tag -d <tagname>`
 
 Tag remote von origin löschen: `git push origin :<tagname>` 
