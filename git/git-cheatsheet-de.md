@@ -64,7 +64,7 @@ Wichtig: Solltet Ihr nachträglich Einstellungen für `autocrlf` oder `core.eol`
 ändern, muss das lokale repository neu ausgecheckt werden.
 
 ## Lokales Arbeiten
-Lokal zu arbeiten beeinflusst andere nicht!
+Den Zustand des lokalen Repositories anzeigen: `git status`
 
 ## Schadensbegrenzung
 ### Teil 1
