@@ -14,6 +14,7 @@
 *.ilg
 *.ind
 *.ist
+*.kile
 *.kilepr
 *.lof
 *.log
@@ -28,10 +29,10 @@
 *.ps
 *.snm
 *.synctex.gz
+*.tdo
 *.toc
 *.vrb
 *.xdy
-*.tdo
+.idea
+.texpadtmp
 _minted*
-.texpadtmp/
-
