@@ -35,6 +35,7 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
    Mailadresse.
 
 ## Lokales Arbeiten
+1. Lasst euch anzeigen, welche Git-Version ihr benutzt.
 1. Lasst euch die Git-Hilfe anzeigen.
 1. Lasst euch die Git-Hilfe für `git init` anzeigen. Falls die Hilfe auf der
    Kommandozeile angezeigt wird, kommt ihr mit der `q`-Taste wieder raus.
@@ -51,8 +52,9 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Committet die Änderungen. Gebt dabei die Commit-Message direkt mit an.
 1. Lasst euch den Status anzeigen.
 1. Lasst euch das Log anzeigen.
+1. Schaut euch mit `gitk` die History grafisch an.
 1. Lasst euch den letzten Commit anzeigen.
-1. Lasst euch die Liste der im letzen Commit geänderten Dateien anzeigen.
+1. Lasst euch die Liste der im letzten Commit geänderten Dateien anzeigen.
 1. Und jetzt noch einmal dasselbe mit der Commit-ID.
 1. Bearbeitet die existierende Datei `hans.txt` und legt außerdem eine zweite
    Datei `wurst.txt` neu an.
@@ -89,7 +91,7 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Wechselt wieder auf den `master`-Branch und schaut euch wieder das Log an.
 1. Lasst euch den Unterschied zum `pinguin`-Branch anzeigen.
 1. Wechselt mit `git checkout -` zum `pinguin` und wieder zurück zum `master`.
-1. Merget den `pinguin`-Branch in den master und schaut euch das Log an.
+1. Merget den `pinguin`-Branch in den `master` und schaut euch das Log an.
 1. Löscht den `pinguin`-Branch.
 1. Legt mit einem Kommando einen Branch `nacktmull` an und wechselt direkt in den Branch.
 1. Legt eine Datei `frittiertes-mars.txt` an und committet sie.
@@ -135,13 +137,13 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Lasst euch die Remote-Branches anzeigen.
 1. Check den `gurkensalat`-Remote-Branch aus und wechselt direkt auf den Branch.
 1. Wartet, bis Oliver etwas geändert und gepusht hat. Pullt euch die Änderungen.
-1. Wechselt wieder auf den `master` und löscht den lokalen `gurkensalat`-Branch
+1. Wechselt wieder auf den `main` und löscht den lokalen `gurkensalat`-Branch
    wieder.
 1. Pullt euch die Änderungen.
 1. Legt einen Branch an, legt dort einen Datei an und committet sie.
 1. Wartet, bis Oliver etwas geändert und gepusht hat.
-1. Wechselt zum `master`, pullt, wechselt zu eurem Branch, rebased, wechselt
-   wieder zu `master`, merget euren Branch, pusht, und löscht euren Branch.
+1. Wechselt zum `main`, pullt, wechselt zu eurem Branch, rebased, wechselt
+   wieder zu `main`, merget euren Branch, pusht, und löscht euren Branch.
 
 ## Noch mehr Schadensbegrenzung
 1. Erzeugt einen Branch nicht von `master`, sondern vom vorletzten Commit von `master`. Löscht den Branch dann wieder.
