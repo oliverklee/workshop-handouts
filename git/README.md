@@ -36,6 +36,9 @@
 - [GitHub flow](https://guides.github.com/introduction/flow/)
 - [Git Flow](https://leanpub.com/git-flow/read)
 
+## Good commit messages
+- [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
+
 ### Online courses
 
 #### Codecademy

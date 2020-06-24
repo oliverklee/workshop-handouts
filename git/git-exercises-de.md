@@ -71,6 +71,9 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Bearbeitet `hans.txt`. Commit die Datei, ohne vorher ein explizites `add`
    zu machen.
 1. Lasst euch das Log einzeilig anzeigen.
+1. Lest euch den
+   [Artikel über gute Commit-Message](https://chris.beams.io/posts/git-commit/)
+   durch.
 
 ## Schadensbegrenzung
 1. Bearbeitet die `hans.txt` und fügt diese zum letzten Commit hinzu.
