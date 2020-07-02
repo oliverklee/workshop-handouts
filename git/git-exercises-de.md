@@ -94,7 +94,14 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Wechselt wieder auf den `master`-Branch und schaut euch wieder das Log an.
 1. Lasst euch den Unterschied zum `pinguin`-Branch anzeigen.
 1. Wechselt mit `git checkout -` zum `pinguin` und wieder zurück zum `master`.
-1. Merget den `pinguin`-Branch in den `master` und schaut euch das Log an.
+1. Merget den `pinguin`-Branch (per Fast-Forward, ohne Merge-Commit)
+   in den `master` und schaut euch das Log an.
+1. Entfernt den letzten Commit vom `master` wieder, sodass der `master` wieder
+   den Zustand von vor dem Merge hat.
+1. Merget den `pinguin`-Branch (ohne Fast-Forward, mit Merge-Commit)
+   in den `master` und schaut euch das Log an.
+1. Findet die Commit-IDs der beiden Eltern-Commits des Merge-Commits
+   und vollzieht die Commit-IDs und die Struktur per `gitk` nach.
 1. Löscht den `pinguin`-Branch.
 1. Legt mit einem Kommando einen Branch `nacktmull` an und wechselt direkt in den Branch.
 1. Legt eine Datei `frittiertes-mars.txt` an und committet sie.
