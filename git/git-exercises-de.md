@@ -156,6 +156,14 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Wartet, bis Oliver etwas geändert und gepusht hat.
 1. Wechselt zum `main`, pullt, wechselt zu eurem Branch, rebased, wechselt
    wieder zu `main`, merget euren Branch, pusht, und löscht euren Branch.
+1. Erzeugt lokal einen Branch `development` sowie einen Branch `release`.
+1. Legt in beiden Branches je zwei unterschiedliche Commits an.
+1. Mergt `release` in `development`, sodass dabei ein Merge-Commit entsteht.
+1. Fügt in beiden Branches je einen Commit hinzu, der dieselbe Stelle derselben
+   Datei verändert, und mergt wieder `release` in `development`.
+1. Erzeugt einen Branch `bugfix` von `release` und fügt dort einen Commit hinzu.
+1. Fügt in `release` auch einen Commit hinzu.
+1. Rebased den Branch `bugfix` auf `release`.
 
 ## Noch mehr Schadensbegrenzung
 1. Erzeugt einen Branch nicht von `master`, sondern vom vorletzten Commit von `master`.
@@ -167,10 +175,16 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Vertauscht die letzten beiden Commits per interaktivem Rebase.
 1. Löscht den vorletzten Commit aus dem Branch (per interaktivem Rebase).
 1. Wechselt wieder auf den `master` und löscht den `nacktmull`-Branch.
+1. Erzeugt einen Commit auf `master`. Findet zwei unterschiedliche Wege,
+   diesen Commit auf einen neuen Branch zu retten, bevor ihr den `master`
+   wieder auf den Stand ohne diesen Commit zurücksetzt.
 1. Findet im Symfony-Demo-Repository per `git bisect` heraus, welcher Commit
    die Datei `app.json` gelöscht hat. (Spickt dafür bitte _nicht_ in der History
    dieser Datei - das wäre im Sinne dieser Übung.) Setzt danach das Repository
    wieder in einen jungfräulichen Zustand zurück.
+1. Rebased den Branch `bugfix` auf `development`.
+1. Findet 3 unterschiedliche Wege, wieder einen Branch `bugfix` zu haben, der wieder
+   `release` plus die Inhalte der Commits aus `bugfix` enthält.
 
 ## .gitignore
 1. Bearbeitet die .gitignore so, dass Dateien ignoriert werden, die Endung
@@ -198,7 +212,7 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Pull und prunet euer lokales Repository und löscht lokal alle remote
    gelöschten Branches.
 
-## Tags
+## Tags und Releases
 1. Lasst euch im Spielwiesen-Projekt lokal alle Tags anzeigen.
 1. Erzeugt im Spielwiesen-Projekt ein annotiertes Tag für euren Geburtstag,
    z.B. `v2.4.75` für den 2.4.1975.
@@ -210,6 +224,10 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Pusht das Tag nach origin.
 1. Löscht das Tag wieder lokal.
 1. Löscht das Tag wieder von origin.
+1. Sorgt dafür, dass eine Datei eures Wunsches nicht in Release-Archiven
+   entsteht.
+1. Packt mit Git-Bordmitteln ein ZIP-Archiv eures Repositories und prüft,
+   dass die Datei tatsächlich nicht darin enthalten ist.
 
 ## Open-Source-Arbeit mit Forks
 
