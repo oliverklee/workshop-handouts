@@ -136,10 +136,12 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
    - https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 1. Teilt Oliver euren GitHub-Usernamen mit und bittet ihn, euch zum
    Übungs-Repository hinzuzufügen.
+1. Klont euch per SSH das Repository unter `https://github.com/symfony/demo`.
+   Wert es nicht weg - ihr braucht es später noch.
 
 ## Verteiltes Arbeiten
-1. Klont euch das Übungsrepository von GitHub. Achtet dabei darauf, dass ihr es
-   per SSH klont und nicht per HTTPS.
+1. Klont euch das Übungsrepository von GitHub/GitLab. Achtet dabei darauf,
+   dass ihr es per SSH klont und nicht per HTTPS.
 1. Wechselt in das Verzeichnis des geklonten Repositories.
 1. Lasst euch die Remotes anzeigen.
 1. Und jetzt mit den URLs.
@@ -156,7 +158,8 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
    wieder zu `main`, merget euren Branch, pusht, und löscht euren Branch.
 
 ## Noch mehr Schadensbegrenzung
-1. Erzeugt einen Branch nicht von `master`, sondern vom vorletzten Commit von `master`. Löscht den Branch dann wieder.
+1. Erzeugt einen Branch nicht von `master`, sondern vom vorletzten Commit von `master`.
+   Löscht den Branch dann wieder.
 1. Schaut euch das Reflog an.
 1. Stellt den gelöschten Branch `nacktmull` wieder her.
 1. Wechselt auf den Branch.
@@ -164,6 +167,10 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Vertauscht die letzten beiden Commits per interaktivem Rebase.
 1. Löscht den vorletzten Commit aus dem Branch (per interaktivem Rebase).
 1. Wechselt wieder auf den `master` und löscht den `nacktmull`-Branch.
+1. Findet im Symfony-Demo-Repository per `git bisect` heraus, welcher Commit
+   die Datei `app.json` gelöscht hat. (Spickt dafür bitte _nicht_ in der History
+   dieser Datei - das wäre im Sinne dieser Übung.) Setzt danach das Repository
+   wieder in einen jungfräulichen Zustand zurück.
 
 ## .gitignore
 1. Bearbeitet die .gitignore so, dass Dateien ignoriert werden, die Endung
@@ -176,8 +183,8 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Erzeugt im Übungsprojekt einen lokalen Branch mit eurem eigenen Namen. Legt
    dort eine Datei an, die auch euren eigenen Namen trägt, und committet sie.
 1. Pusht den Branch auf das Remote-Repository.
-1. Erstellt einen Pull-Request als "work in progress", und weist euch selbst
-   als Assignee zu.
+1. Erstellt einen Pull-Request als Draft (GitHub) oder WIP (GitLab)
+   und weist euch selbst als Assignee zu.
 1. Amended lokal den Commit auf diesem Branch und force-pusht.
 1. Markiert den Pull-Request als nicht mehr "work in progress" und setzt die
    Person rechts neben euch als Reviewer. (Oliver reviewt dabei nicht mit.)
