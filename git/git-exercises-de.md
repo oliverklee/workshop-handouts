@@ -186,12 +186,23 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Findet 3 unterschiedliche Wege, wieder einen Branch `bugfix` zu haben, der wieder
    `release` plus die Inhalte der Commits aus `bugfix` enthält.
 
-## .gitignore
-1. Bearbeitet die .gitignore so, dass Dateien ignoriert werden, die Endung
-   `.html` haben, sowie die Datei `eigene-notizen.txt` (nur im Hauptverzeichnis
-   des Projektes). Testet beides.
-1. Legt ein Verzeichnis `logs` an. Sorgt dann dafür, dass dieses Verzeichnis
+## .gitignore, Archive und .gitattributes
+1. Bearbeitet die `.gitignore so`, dass Dateien in allen Verzeichnissen
+   ignoriert werden, die Endung `.bak` haben. Testet dies.
+1. Sorgt dafür, dass das Verzeichnis `.idea/` nur im Projekt-Wurzelverzeichnis
+   ignoriert wird. Testet beides.
+1. Legt ein Verzeichnis `logs/` an. Sorgt dann dafür, dass dieses Verzeichnis
    im Git auftaucht, aber alle Dateien darin nicht.
+1. Legt ein Verzeichnis `public/` an, darin `index.html`, sowie ein Verzeichnis
+   `public/generated/`. Sorgt dafür, dass `public/generated/` und
+   `public/index.html` im Git sind, alle anderen Dateien in `public/` sowie
+   alle Dateien in `public/generated/` aber ignoriert werden.
+1. Legt von eurem Projekt ein ZIP-Archiv an. Schaut in das ZIP hinein.
+1. Stellt ein, dass eine Datei eurer Wahl nicht im Archiv erscheint.
+   Testet dies.
+1. Stellt ein, dass für minifiziertes JavaScript und minifiziertes CSS kein
+   Git-Diff angezeigt wird. Testet dies mit dem minifizierten jQuery und dem
+   minifizierten Bootstrap-CSS.
 
 ## Verteiltes Arbeiten (Fortsetzung)
 1. Erzeugt im Übungsprojekt einen lokalen Branch mit eurem eigenen Namen. Legt
