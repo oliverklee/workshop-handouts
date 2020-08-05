@@ -201,6 +201,22 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
    Git-Diff angezeigt wird. Testet dies mit dem minifizierten jQuery und dem
    minifizierten Bootstrap-CSS.
 
+## Tags und Releases
+1. Lasst euch im Spielwiesen-Projekt lokal alle Tags anzeigen.
+1. Erzeugt im Spielwiesen-Projekt ein annotiertes Tag für euren Geburtstag,
+   z.B. `v2.4.75` für den 2.4.1975.
+1. Pusht alle Tags auf remote.
+1. Überprüft auf GitHub, dass euer Tag angekommen ist.
+1. Erzeugt auf GitHub aus dem Tag einen Release.
+1. Legt noch ein zweites Tag an, das wie euer erstes Tag heißt, aber mit "x",
+   also zum Beispiel: `x2.4.75`
+1. Pusht das Tag nach origin.
+1. Löscht das Tag wieder lokal.
+1. Löscht das Tag wieder von origin.
+1. Legt von eurem Projekt ein ZIP-Archiv an. Schaut in das ZIP hinein.
+1. Stellt ein, dass eine Datei eurer Wahl nicht im Archiv erscheint.
+   Testet dies.
+
 ## Arbeiten mit Merge-Requests/Pull-Requests
 1. Erzeugt im Übungsprojekt einen lokalen Branch mit eurem eigenen Namen. Legt
    dort eine Datei an, die auch euren eigenen Namen trägt, und committet sie.
@@ -220,22 +236,6 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Pull und prunet euer lokales Repository und löscht lokal alle remote
    gelöschten Branches.
 
-## Tags und Releases
-1. Lasst euch im Spielwiesen-Projekt lokal alle Tags anzeigen.
-1. Erzeugt im Spielwiesen-Projekt ein annotiertes Tag für euren Geburtstag,
-   z.B. `v2.4.75` für den 2.4.1975.
-1. Pusht alle Tags auf remote.
-1. Überprüft auf GitHub, dass euer Tag angekommen ist.
-1. Erzeugt auf GitHub aus dem Tag einen Release.
-1. Legt noch ein zweites Tag an, das wie euer erstes Tag heißt, aber mit "x",
-   also zum Beispiel: `x2.4.75`
-1. Pusht das Tag nach origin.
-1. Löscht das Tag wieder lokal.
-1. Löscht das Tag wieder von origin.
-1. Legt von eurem Projekt ein ZIP-Archiv an. Schaut in das ZIP hinein.
-1. Stellt ein, dass eine Datei eurer Wahl nicht im Archiv erscheint.
-   Testet dies.
-
 ## Open-Source-Arbeit mit Forks
 
 Wichtig in diesem Abschnitt: Bitte erstellt hier sinnvolle Änderungen, die
@@ -249,9 +249,11 @@ das Git-Cheatsheet verbessern, und keine unsinnigen Test-Änderungen.
    den ihr verbessern möchtet, und erstellt dafür ein Ticket.
    Legt dafür einen Branch an und schreibt diesen Abschnitt in
    [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+   **Bitte nur echte Tickets, keine Dummy-Tickets!**
 1. Erstellt daraus einen Pull-Request. Schreibt in die Beschreibung (nicht das
    Subject) der Commit-Message den Text `Fixes #<Ticketnummer>`, damit das
    Ticket beim Mergen des Pull-Requests automatisch geschlossen wird.
+   **Bitte nur echte Pull-Requests, keine Dummy-PRs!**
 1. Wartet auf Review-Feedback. Überarbeitet und rebaset euren PR nach Bedarf. 
 1. Wartet, bis Oliver euren PR gemergt hat.
 1. Geht auf GitHub auf den geschlossenen PR und löscht darüber den
@@ -260,6 +262,8 @@ das Git-Cheatsheet verbessern, und keine unsinnigen Test-Änderungen.
    Branch (nachdem ihr `git remote prune origin` gemacht habt).
 
 ## Bonusaufgaben
+
 Falls ihr Lust auf Knobelaufgaben habt:
+
 1. Spielt [The Git Game](https://github.com/git-game/git-game).
 1. Spielt [The Git Game 2](https://github.com/git-game/git-game-v2).
