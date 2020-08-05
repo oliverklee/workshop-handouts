@@ -185,6 +185,14 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Rebased den Branch `bugfix` auf `development`.
 1. Findet 3 unterschiedliche Wege, wieder einen Branch `bugfix` zu haben, der wieder
    `release` plus die Inhalte der Commits aus `bugfix` enthält.
+1. Legt zwei Dateien um Hauptverzeichnis eures Projektes an. Räumt diese mit
+   Git-Bordmitteln wieder weg.
+1. Legt eine Datei im Hauptverzeichnis an und eine im Unterverzeichnis.
+   Räume beide mit Git-Bordmitteln wieder weg.
+1. Legt einen neuen Branch an und macht dort den letzten Commit wieder
+   rückgängig, sodass es dafür auch einen Commit gibt.
+1. Räumt eure lokalen Kopien von Remote-Branches des Übungsprojektes wieder weg.
+1. Führt die Garbage-Collection aus. Und jetzt noch einmal aggressiv.
 
 ## .gitignore und .gitattributes
 1. Bearbeitet die `.gitignore so`, dass Dateien in allen Verzeichnissen
