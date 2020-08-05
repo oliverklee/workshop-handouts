@@ -186,7 +186,7 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Findet 3 unterschiedliche Wege, wieder einen Branch `bugfix` zu haben, der wieder
    `release` plus die Inhalte der Commits aus `bugfix` enthält.
 
-## .gitignore, Archive und .gitattributes
+## .gitignore und .gitattributes
 1. Bearbeitet die `.gitignore so`, dass Dateien in allen Verzeichnissen
    ignoriert werden, die Endung `.bak` haben. Testet dies.
 1. Sorgt dafür, dass das Verzeichnis `.idea/` nur im Projekt-Wurzelverzeichnis
@@ -197,14 +197,11 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
    `public/generated/`. Sorgt dafür, dass `public/generated/` und
    `public/index.html` im Git sind, alle anderen Dateien in `public/` sowie
    alle Dateien in `public/generated/` aber ignoriert werden.
-1. Legt von eurem Projekt ein ZIP-Archiv an. Schaut in das ZIP hinein.
-1. Stellt ein, dass eine Datei eurer Wahl nicht im Archiv erscheint.
-   Testet dies.
 1. Stellt ein, dass für minifiziertes JavaScript und minifiziertes CSS kein
    Git-Diff angezeigt wird. Testet dies mit dem minifizierten jQuery und dem
    minifizierten Bootstrap-CSS.
 
-## Verteiltes Arbeiten (Fortsetzung)
+## Arbeiten mit Merge-Requests/Pull-Requests
 1. Erzeugt im Übungsprojekt einen lokalen Branch mit eurem eigenen Namen. Legt
    dort eine Datei an, die auch euren eigenen Namen trägt, und committet sie.
 1. Pusht den Branch auf das Remote-Repository.
@@ -235,10 +232,9 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Pusht das Tag nach origin.
 1. Löscht das Tag wieder lokal.
 1. Löscht das Tag wieder von origin.
-1. Sorgt dafür, dass eine Datei eures Wunsches nicht in Release-Archiven
-   entsteht.
-1. Packt mit Git-Bordmitteln ein ZIP-Archiv eures Repositories und prüft,
-   dass die Datei tatsächlich nicht darin enthalten ist.
+1. Legt von eurem Projekt ein ZIP-Archiv an. Schaut in das ZIP hinein.
+1. Stellt ein, dass eine Datei eurer Wahl nicht im Archiv erscheint.
+   Testet dies.
 
 ## Open-Source-Arbeit mit Forks
 
