@@ -30,7 +30,8 @@
 ## Cheat sheets
 - [Git cheat sheet for my workshops](git-cheatsheet-de.md) (DE)
 - [Unix/Linux Command Reference](https://files.fosswire.com/2007/08/fwunixref.pdf)
-- [Git Cheat Sheet](https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/02/cheat-sheets.pdf)
+- [Git cheat sheet](https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/02/cheat-sheets.pdf)
+- [.gitattributes cheat sheet](https://medium.com/@pablorsk/be-a-git-ninja-the-gitattributes-file-e58c07c9e915)
 
 ## Git workflows
 - [GitHub flow](https://guides.github.com/introduction/flow/)
