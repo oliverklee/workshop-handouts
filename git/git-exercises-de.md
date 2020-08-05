@@ -124,7 +124,7 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Rebased noch einmal. Löst diesmal die Konflikte im Editor, added die Datei
    und führt den Rebase dann zu Ende.
 1. Legt einen Branch an, legt dort einen Commmit an und cherry-pickt diesen auf
-   einen anderen Branch. 
+   einen anderen Branch.
 
 ## RSA-Keys und Accounts
 1. Erzeugt euch ein RSA-Schlüsselpaar **ohne Passphrase** (falls noch nicht
@@ -214,8 +214,8 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Erzeugt im Spielwiesen-Projekt ein annotiertes Tag für euren Geburtstag,
    z.B. `v2.4.75` für den 2.4.1975.
 1. Pusht alle Tags auf remote.
-1. Überprüft auf GitHub, dass euer Tag angekommen ist.
-1. Erzeugt auf GitHub aus dem Tag einen Release.
+1. Überprüft auf GitHub/GitLab, dass euer Tag angekommen ist.
+1. Erzeugt auf GitHub/GitLab aus dem Tag einen Release.
 1. Legt noch ein zweites Tag an, das wie euer erstes Tag heißt, aber mit "x",
    also zum Beispiel: `x2.4.75`
 1. Pusht das Tag nach origin.
@@ -226,28 +226,75 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
    Testet dies.
 
 ## Arbeiten mit Merge-Requests/Pull-Requests
-1. Erzeugt im Übungsprojekt einen lokalen Branch mit eurem eigenen Namen. Legt
-   dort eine Datei an, die auch euren eigenen Namen trägt, und committet sie.
-1. Pusht den Branch auf das Remote-Repository.
-1. Erstellt einen Pull-Request als Draft (GitHub) oder WIP (GitLab)
-   und weist euch selbst als Assignee zu.
-1. Amended lokal den Commit auf diesem Branch und force-pusht.
-1. Markiert den Pull-Request als nicht mehr "work in progress" und setzt die
-   Person rechts neben euch als Reviewer. (Oliver reviewt dabei nicht mit.)
-1. Reviewt den Pull-Request der Person links neben euch, bittet um eine
-   Änderung und markiert den Review als "Änderungen benötigt".
-1. Macht auf eurem eigenen Branch die gewünschten Änderungen, legt diese in
+
+Rollen:
+- **A:** Autor:in
+- **R:** Reviewer:in
+
+1. Teilt euch in Zweiergruppen auf (und in einer Dreiergruppe, falls wir eine
+   ungerade Anzahl Leute sind).
+1. **A:** Erzeugt im Übungsprojekt einen lokalen Branch mit eurem eigenen
+   Namen. Legt dort eine Datei an, die auch euren eigenen Namen trägt, und
+   committet sie.
+1. **A:** Pusht den Branch auf das Remote-Repository.
+
+### Ab hier: GitHub-Version
+
+1. **A:** Erstellt einen Draft-Pull-Request und weist ihn euch selbst als
+   Assignee zu.
+1. **A:** Amended lokal den Commit auf diesem Branch und force-pusht.
+1. **A:** Markiert den Pull-Request als nicht mehr "Draft" und setzt euren
+   Buddy als Reviewer (GitHub).
+1. **R:** Reviewt den Pull-Request eures Buddys, lobt per Kommentar eine Zeile,
+   bittet per Kommentar an einer Zeile um eine Änderung
+   und markiert den Review als "Änderungen benötigt".
+1. **A:** Macht auf eurem eigenen Branch die gewünschten Änderungen, legt diese in
    einem neuen Commit ab und pusht euren Branch.
-1. Schaut (als Reviewer) euch den überarbeiteten Pull-Request an, reviewt erneut
-   (diesmal positiv) und mergt inklusive Squash. Sorgt dabei dafür, dass die neue
-   Commit-Message gut aussieht. Löscht den Remote-Branch.
-1. Pull und prunet euer lokales Repository und löscht lokal alle remote
-   gelöschten Branches.
+   Kommentiert den Kommentar außerdem mit "Done.".
+1. **R:** Schaut euch den aktualisierten PR an.
+   Markiert die Diskussion als gelöst.
+   Schlagt diesmal eine einzeilige Änderung vor.
+1. **A:** Übernehmt in eurem eigene PR die Änderung, holt euch den Commit auf
+   lokal, squasht, und force-pusht.
+1. **R:** Schlagt diesmal eine zweizeilige Änderung vor.
+1. **A:** Übernehmt die von eurem Buddy vorgeschlagene zweizeilige Änderung.
+   Squasht diesmal nicht.
+1. **R:** Reviewt das Endergebnis, genehmigt den PR mit ein paar lobenden
+   Worten (z.B. "LGTM"), und mergt ihn. Löscht den Branch.
+
+### Ab hier: GitLab-Version
+
+1. **A:** Erstellt einen WIP-Merge-Request und weist ihn euch selbst zu.
+   Stellt ein, dass beim Mergen gesquasht werden soll und der Branch gelöscht
+   werden soll.
+1. **A:** Amended lokal den Commit auf diesem Branch und force-pusht.
+1. **A:** Markiert den Merge-Request als nicht mehr "work in progress" und
+   weist den Merge-Request eurem Buddy zu.
+1. **R:** Reviewt den Merge-Request eures Buddys, lobt per Kommentar eine Zeile,
+   bittet per Kommentar an einer Zeile um eine Änderung,
+   markiert den Merge-Request als "Daumen runter" und weist
+   den MR wieder zurück zu.
+1. **A:** Macht auf eurem eigenen Branch die gewünschten Änderungen, legt diese
+   in einem neuen Commit ab und pusht euren Branch. Weist den MR wieder eurem
+   Review-Buddy zu.
+   Kommentiert den Kommentar außerdem mit "Done.".
+1. **R:** Schaut euch den aktualisierten MR an.
+   Markiert die Diskussion als gelöst.
+   Schlagt diesmal eine einzeilige Änderung vor.
+   Denkt dabei ans Hin- und Her-Zuweisen.
+1. **A:** Übernehmt in eurem eigene MR die Änderung, holt euch den Commit auf
+   lokal, squasht, und force-pusht.
+1. **R:** Schlagt diesmal eine zweizeilige Änderung vor.
+1. **A:** Übernehmt die von eurem Buddy vorgeschlagene zweizeilige Änderung.
+   Squasht diesmal nicht.
+1. **R:** Reviewt das Endergebnis, genehmigt den MR mit ein paar lobenden
+   Worten (z.B. "LGTM"), und mergt ihn. Squasht dabei die Commits und bearbeitet
+   die Commit-Message.
 
 ## Open-Source-Arbeit mit Forks
 
-Wichtig in diesem Abschnitt: Bitte erstellt hier sinnvolle Änderungen, die
-das Git-Cheatsheet verbessern, und keine unsinnigen Test-Änderungen.
+**Wichtig in diesem Abschnitt: Bitte erstellt hier nur sinnvolle Änderungen, die
+das Git-Cheatsheet verbessern, und keine unsinnigen Test-Änderungen.**
 
 1. Forkt das
    [Workshop-Handouts-Repository](https://github.com/oliverklee/workshop-handouts/).
@@ -262,7 +309,7 @@ das Git-Cheatsheet verbessern, und keine unsinnigen Test-Änderungen.
    Subject) der Commit-Message den Text `Fixes #<Ticketnummer>`, damit das
    Ticket beim Mergen des Pull-Requests automatisch geschlossen wird.
    **Bitte nur echte Pull-Requests, keine Dummy-PRs!**
-1. Wartet auf Review-Feedback. Überarbeitet und rebaset euren PR nach Bedarf. 
+1. Wartet auf Review-Feedback. Überarbeitet und rebaset euren PR nach Bedarf.
 1. Wartet, bis Oliver euren PR gemergt hat.
 1. Geht auf GitHub auf den geschlossenen PR und löscht darüber den
    Remote-Branch.
