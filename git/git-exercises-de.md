@@ -134,7 +134,7 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Teilt Oliver euren GitHub-Usernamen mit und bittet ihn, euch zum
    Übungs-Repository hinzuzufügen.
 1. Klont euch per SSH das Repository unter `https://github.com/symfony/demo`.
-   Wert es nicht weg - ihr braucht es später noch.
+   Werft es nicht weg - ihr braucht es später noch.
 
 ## Verteiltes Arbeiten
 1. Klont euch das Übungsrepository von GitHub/GitLab. Achtet dabei darauf,
