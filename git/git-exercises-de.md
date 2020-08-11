@@ -71,9 +71,6 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
 1. Bearbeitet `hans.txt`. Commit die Datei, ohne vorher ein explizites `add`
    zu machen.
 1. Lasst euch das Log einzeilig anzeigen.
-1. Lest euch den
-   [Artikel über gute Commit-Message](https://chris.beams.io/posts/git-commit/)
-   durch.
 
 ## Schadensbegrenzung
 1. Bearbeitet die `hans.txt` und fügt diese zum letzten Commit hinzu.
@@ -296,6 +293,20 @@ Rollen:
 1. **R:** Reviewt das Endergebnis, genehmigt den MR mit ein paar lobenden
    Worten (z.B. "LGTM"), und mergt ihn. Squasht dabei die Commits und bearbeitet
    die Commit-Message.
+
+## Commit-Messages
+1. Lest euch den
+   [Artikel über gute Commit-Message](https://chris.beams.io/posts/git-commit/)
+   durch.
+1. Schaut euch die
+   [Commit-History des TYPO3-Core](https://github.com/TYPO3/TYPO3.CMS/commits/master)
+   an. Nehmt euch zwei Commit-Messages vor, bei denen die Subjekt-Zeile nicht
+   den Empfehlungen aus dem Artikel entspricht, und verbessert sie.
+   Präsentiert dann die Vorher- und Nachher-Version beider Commit-Messages der
+   Gruppe.
+1. Sucht euch eine Commit-Message von euch selbst in eurem echten Projekt heraus,
+   verbessert die komplette Message (mit Beschreibung), und präsentiert sie der
+   Gruppe.
 
 ## Open-Source-Arbeit mit Forks
 
