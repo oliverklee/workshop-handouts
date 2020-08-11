@@ -212,7 +212,7 @@ Die nötigen Befehle findet ihre im [Git-Cheatsheet](git-cheatsheet-de.md).
    z.B. `v2.4.75` für den 2.4.1975.
 1. Pusht alle Tags auf remote.
 1. Überprüft auf GitHub/GitLab, dass euer Tag angekommen ist.
-1. Erzeugt auf GitHub/GitLab aus dem Tag einen Release.
+1. Nur GitLab: Erzeugt aus dem Tag ein Release.
 1. Legt noch ein zweites Tag an, das wie euer erstes Tag heißt, aber mit "x",
    also zum Beispiel: `x2.4.75`
 1. Pusht das Tag nach origin.
