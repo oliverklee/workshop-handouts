@@ -256,8 +256,11 @@ Rollen:
    Schlagt diesmal eine einzeilige Änderung vor.
 1. **A:** Übernehmt in eurem eigene PR die Änderung, holt euch den Commit auf
    lokal, squasht, und force-pusht.
-1. **R:** Schlagt diesmal eine zweizeilige Änderung vor.
-1. **A:** Übernehmt die von eurem Buddy vorgeschlagene zweizeilige Änderung.
+1. **R:** Schlagt diesmal weitere Änderungen vor:
+   * eine, die zwei Zeilen ändert
+   * eine, die aus einer Zeile zwei macht
+   * eine, die eine existierende Zeile löscht
+1. **A:** Übernehmt die von eurem Buddy vorgeschlagene Änderungen.
    Squasht diesmal nicht.
 1. **R:** Reviewt das Endergebnis, genehmigt den PR mit ein paar lobenden
    Worten (z.B. "LGTM"), und mergt ihn. Löscht den Branch.
@@ -284,8 +287,11 @@ Rollen:
    Denkt dabei ans Hin- und Her-Zuweisen.
 1. **A:** Übernehmt in eurem eigene MR die Änderung, holt euch den Commit auf
    lokal, squasht, und force-pusht.
-1. **R:** Schlagt diesmal eine zweizeilige Änderung vor.
-1. **A:** Übernehmt die von eurem Buddy vorgeschlagene zweizeilige Änderung.
+1. **R:** Schlagt diesmal weitere Änderungen vor:
+   * eine, die zwei Zeilen ändert
+   * eine, die aus einer Zeile zwei macht
+   * eine, die eine existierende Zeile löscht
+1. **A:** Übernehmt die von eurem Buddy vorgeschlagene Änderungen.
    Squasht diesmal nicht.
 1. **R:** Reviewt das Endergebnis, genehmigt den MR mit ein paar lobenden
    Worten (z.B. "LGTM"), und mergt ihn. Squasht dabei die Commits und bearbeitet
