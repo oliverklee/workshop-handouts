@@ -130,7 +130,12 @@ automatisch erzeugt wird, sodass wir da keine `.gitignore` benötigen):
 _to do_
 
 ## Arbeiten mit GitHub im selben Projekt
-_to do_
+1. Klont euch das Übungsrepository von GitHub/GitLab. Achtet dabei darauf, dass ihr es per SSH klont und nicht per HTTPS.
+2. Wechselt in das Verzeichnis des geklonten Repositories.
+3. Lasst euch die Remotes anzeigen.
+4. Und jetzt mit den URLs.
+5. Lasst euch die lokalen Branches anzeigen.
+
 
 ## Tags
 
