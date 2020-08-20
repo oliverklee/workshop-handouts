@@ -84,6 +84,14 @@ einen Branch löschen (auch mit ungemergten Änderungen):
 `git branch -D <branchname>`
 
 ## Rebase und Konflikte
+
+Einen Branch mit einem anderen rebasen:
+
+1. einen Branch A auschecken: `git switch <branchnameA>`
+1. den ausgecheckten Branch A mit einem anderen Branch B rebasen: `git rebase <branchnameB>`
+
+### Konflikte
+
 _to do_
 
 ### Interaktiver Rebase
