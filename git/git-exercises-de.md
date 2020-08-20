@@ -230,6 +230,8 @@ Rollen:
 
 1. Teilt euch in Zweiergruppen auf (und in einer Dreiergruppe, falls wir eine
    ungerade Anzahl Leute sind).
+1. Sprecht ab, wer zuerst Autor:in ist und wer Reviewer:in. Spielt damit
+   die Übungen durch und wechselt danach die Rollen.
 1. **A:** Erzeugt im Übungsprojekt einen lokalen Branch mit eurem eigenen
    Namen. Legt dort eine Datei an, die auch euren eigenen Namen trägt, und
    committet sie.
@@ -311,17 +313,24 @@ Rollen:
 ## Open-Source-Arbeit mit Forks
 
 **Wichtig in diesem Abschnitt: Bitte erstellt hier nur sinnvolle Änderungen, die
-das Git-Cheatsheet verbessern, und keine unsinnigen Test-Änderungen.**
+das Git-Cheatsheet oder die Aufgaben verbessern, und keine unsinnigen
+Test-Änderungen.**
 
 1. Forkt das
    [Workshop-Handouts-Repository](https://github.com/oliverklee/workshop-handouts/).
 1. Klont euch euren Fork auf lokal.
 1. Legt euch lokal ein `upstream`-Remote an.
 1. Sucht euch einen Abschnitt im [Git-Cheatsheet](git-cheatsheet-de.md) heraus,
-   den ihr verbessern möchtet, und erstellt dafür ein Ticket.
-   Legt dafür einen Branch an und schreibt diesen Abschnitt in
-   [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+   den ihr verbessern möchtet, erstellt dafür ein Ticket und weist es euch zu.
    **Bitte nur echte Tickets, keine Dummy-Tickets!**
+   Alternativ könnt ihr auch gerne Fehler in den Aufgaben (also diesem
+   Dokument) beheben. Eventuell stehen dafür in den
+   [Issues](https://github.com/oliverklee/workshop-handouts/issues)
+   auch schon offene Punkte, die ihr übernehmen könnt.
+1. Legt dafür einen sinnvoll benannten Branch an und fügt dort eure Änderungen
+   ein.
+   Hier ist ein
+   [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 1. Erstellt daraus einen Pull-Request. Schreibt in die Beschreibung (nicht das
    Subject) der Commit-Message den Text `Fixes #<Ticketnummer>`, damit das
    Ticket beim Mergen des Pull-Requests automatisch geschlossen wird.
