@@ -156,6 +156,8 @@ Tag lokal löschen: `git tag -d <tagname>`
 
 Tag remote von origin löschen: `git push origin :<tagname>` 
 
+Tag checkout in branch : `git checkout tags/<tagname> -b <branchname>` 
+
 ## Open-Source-Arbeit mit Forks
 
 ### Mit dem Fork verbinden
