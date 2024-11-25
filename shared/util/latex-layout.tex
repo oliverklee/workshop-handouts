@@ -17,6 +17,7 @@
 
 \newcommand{\fett}[1]{\textsf{\textbf{#1}}}
 
+
 %----------------------------------------------------------------------------------
 % Mehrspachigkeit
 %----------------------------------------------------------------------------------
@@ -27,20 +28,38 @@
 % Anführungszeichen sprachabhängig machen
 \usepackage[babel]{csquotes}
 
+
+%----------------------------------------------------------------------------------
+% Größen, Abstände und Einzüge
+%----------------------------------------------------------------------------------
+
+% Mehr von der Seite nutzen
+\usepackage[top=2cm, bottom=2cm, right=3cm, left=2cm]{geometry}
+
+% Absätze werden nicht eingezogen, sondern vertikal abgesetzt
+\setlength{\parindent}{0mm}
+\addtolength{\parskip}{0.5em}
+
+% Descriptions ohne Einzug
+\renewenvironment{description}[1][0pt]
+{\list{}{
+    \labelwidth=0pt \leftmargin=#1
+    \let\makelabel\descriptionlabel
+}
+}
+{\endlist}
+
+% Im Zweifel die Seite nicht komplett füllen, aber keine zusätzlichen vertikalen Abstände hinzufügen
+\raggedbottom
+
+
 %----------------------------------------------------------------------------------
 % Pakete und Parameter
 %----------------------------------------------------------------------------------
 
-% Mehr von der Seitenbreite nutzen
-% \usepackage{a4wide}
-
 % Grafikpaket
 \usepackage{color}
 \usepackage[pdftex]{graphicx}
-
-% Absätze werden nicht eingezogen, sondern vertikal abgesetzt
-\setlength{\parindent}{0mm}
-\addtolength{\parskip}{0.4em}
 
 % Bibliographieeinstellungen
 \usepackage{natbib}
@@ -68,20 +87,11 @@
 
 % Kopfzeile auf linker Seite: "1  Einführung"
 \renewcommand{\chaptermark}[1]{%
-\markboth{\thechapter\ \ \ \ #1}{}}
+    \markboth{\thechapter\ \ \ \ #1}{}}
 
 % Kopfzeile auf rechter Seite: "1.1  Basics"
 \renewcommand{\sectionmark}[1]{%
-\markright{\thesection\ \ \ \ #1}{}}
-
-% Seitenlayout
-\topmargin0mm
-\footskip10mm % Abstand von unserem Rand zu Datum
-
-\newlength{\fullwidth} % Seites des Textes plus Randnotizen
-\setlength{\fullwidth}{\textwidth}
-\addtolength{\fullwidth}{\marginparsep}
-\addtolength{\fullwidth}{\marginparwidth}
+    \markright{\thesection\ \ \ \ #1}{}}
 
 % Maximal drei Ebenen nummerieren
 \setcounter{secnumdepth}{3}
@@ -91,13 +101,3 @@
 % zweispaltiges Layout möglich machen
 \usepackage{multicol}
 
-% Descriptions ohne Einzug
-\renewenvironment{description}[1][0pt]
-{\list{}{
-    \labelwidth=0pt \leftmargin=#1
-     \let\makelabel\descriptionlabel
-  }
-}
-{\endlist}
-
-\raggedbottom
