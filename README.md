@@ -29,7 +29,7 @@ Ich gebe auch öfter mal Workshops auf den TYPO3-Developer-Days.
 ## Lizenz
 
 Diese Handouts ist unter einer Creative-Commons-Lizenz lizensiert, und zwar
-konkret unter der "Namensnennung-Weitergabe unter gleichen Bedingungen~4.0
+konkret unter der "Namensnennung-Share Alike 4.0 international
 (CC BY-SA 4.0)". Das bedeutet, dass ihr die Handouts unter diesen Bedingungen
 für euch kostenlos verbreiten, bearbeiten und nutzen könnt
 (auch kommerziell):
@@ -46,5 +46,5 @@ für euch kostenlos verbreiten, bearbeiten und nutzen könnt
 * Lizenz nennen: Wenn ihr die Handouts weiter verbreitet, müsst ihr dabei
   auch die Lizenzbedingungen nennen oder beifügen.
 
-Die [ausführliche Version dieser Lizenz](https://creativecommons.org/licenses/by-sa/4.0/)
+Die [ausführliche Version dieser Lizenz](https://creativecommons.org/licenses/by-sa/4.0/deed.de)
 findet ihr online.
