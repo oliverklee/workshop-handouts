@@ -1,14 +1,19 @@
 %----------------------------------------------------------------------------------
-% Pakete und Parameter
+% Typografie und Fonts
 %----------------------------------------------------------------------------------
 
-% Pound-Zeichen statt $ in Code-Kommentaren fixen
-\usepackage[T1]{fontenc}
 % Vektorfonts statt Pixelfonts
+\usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
 % Input-Encoding für UTF-8
 \usepackage[utf8]{inputenc}
+
+\newcommand{\fett}[1]{\textsf{\textbf{#1}}}
+
+%----------------------------------------------------------------------------------
+% Pakete und Parameter
+%----------------------------------------------------------------------------------
 
 % Mehrsprachigkeit für Deutsch und Englisch erlauben
 \usepackage[ngerman,english]{babel}
@@ -86,5 +91,3 @@
 {\endlist}
 
 \raggedbottom
-
-\newcommand{\fett}[1]{\textsf{\textbf{#1}}}
