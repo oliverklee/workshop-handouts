@@ -69,6 +69,23 @@
 
 
 %----------------------------------------------------------------------------------
+% Dokument- und Seitenstruktur
+%----------------------------------------------------------------------------------
+
+% zweispaltiges Layout möglich machen
+\usepackage{multicol}
+
+% Seiten-Kopfzeilen und -Fußzeilen
+\usepackage{scrlayer-scrpage}
+
+% Maximal drei Ebenen nummerieren
+\setcounter{secnumdepth}{2}
+
+% Maximale 2 Ebenen im Inhaltsverzeichnis
+\setcounter{tocdepth}{1}
+
+
+%----------------------------------------------------------------------------------
 % Pakete und Parameter
 %----------------------------------------------------------------------------------
 
@@ -79,30 +96,3 @@
 % für Boxen etc.
 % \usepackage{framed}
 \definecolor{shadecolor}{rgb}{0.8,0.8,0.8}
-
-
-%----------------------------------------------------------------------------------
-% Seitenlayout
-%----------------------------------------------------------------------------------
-
-
-% Seiten-Kopfzeilen und -Fußzeilen
-\usepackage{scrlayer-scrpage}
-\pagestyle{headings}
-
-% Kopfzeile auf linker Seite: "1  Einführung"
-\renewcommand{\chaptermark}[1]{%
-    \markboth{\thechapter\ \ \ \ #1}{}}
-
-% Kopfzeile auf rechter Seite: "1.1  Basics"
-\renewcommand{\sectionmark}[1]{%
-    \markright{\thesection\ \ \ \ #1}{}}
-
-% Maximal drei Ebenen nummerieren
-\setcounter{secnumdepth}{3}
-% Maximale Gliederungstiefe, die noch ins Inhaltsverzeichnis aufgenommen wird
-\setcounter{tocdepth}{1}
-
-% zweispaltiges Layout möglich machen
-\usepackage{multicol}
-
