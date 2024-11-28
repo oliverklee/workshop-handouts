@@ -87,6 +87,13 @@
 % Maximale 2 Ebenen im Inhaltsverzeichnis
 \setcounter{tocdepth}{1}
 
+% Mit jeder Section eine neue Seite anfangen
+% https://tex.stackexchange.com/questions/9497/start-new-page-with-each-section
+\usepackage{etoolbox}
+\preto{\section}{%
+  \ifnum\value{section}=0 \else\clearpage\fi
+}
+
 
 %----------------------------------------------------------------------------------
 % Grafiken, Farben und Boxen
