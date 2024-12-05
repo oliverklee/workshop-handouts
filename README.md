@@ -7,6 +7,7 @@ Dies sind die Handouts zu vielen meiner Workshops:
 * [Git](git) (DE)
 * [PHP (für Leute mit einiger Erfahrung)](php-advanced) (DE)
 * [Train the Trainer](train-the-trainer) (DE)
+* [Gewaltfreie Kommunikation](gfk) (DE)
 
 Zusätzlich liegt hier noch:
 
