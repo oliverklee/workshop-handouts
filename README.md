@@ -8,6 +8,7 @@ Dies sind die Handouts zu vielen meiner Workshops:
 * [PHP (für Leute mit einiger Erfahrung)](php-advanced) (DE)
 * [Train the Trainer](train-the-trainer) (DE)
 * [Gewaltfreie Kommunikation](gfk) (DE)
+* [Konfliktgespräche](konflikte) (DE)
 
 Zusätzlich liegt hier noch:
 
