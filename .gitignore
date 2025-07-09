@@ -14,6 +14,7 @@
 *.ilg
 *.ind
 *.ist
+*.kate-swp
 *.kile
 *.kilepr
 *.lof
